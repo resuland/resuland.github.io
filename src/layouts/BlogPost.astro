@@ -1,0 +1,106 @@
+---
+import Document from '../components/Document.astro'
+import Content from '../components/Content.astro'
+import { Image } from '@astrojs/image/components'
+
+export interface Props {
+  content: {
+    title: string
+    description: string
+    pubDate?: string
+    heroImage?: string
+    tags?: string[]
+  }
+}
+
+const {
+  content: { title, description, heroImage },
+} = Astro.props
+
+const mdcss = [
+  // clean
+  'prose-headings:m-0',
+  'prose-lead:m-0',
+  'prose-h1:m-0',
+  'prose-h2:m-0',
+  'prose-h3:m-0',
+  'prose-h4:m-0',
+  'prose-p:m-0',
+  'prose-a:m-0',
+  'prose-blockquote:m-0',
+  'prose-figure:m-0',
+  'prose-figcaption:m-0',
+  'prose-strong:m-0',
+  'prose-em:m-0',
+  'prose-code:m-0',
+  'prose-pre:m-0',
+  'prose-ol:m-0',
+  'prose-ul:m-0',
+  'prose-li:m-0',
+  'prose-table:m-0',
+  'prose-thead:m-0',
+  'prose-tr:m-0',
+  'prose-th:m-0',
+  'prose-td:m-0',
+  'prose-img:m-0',
+  'prose-video:m-0',
+  'prose-hr:m-0',
+  // add (move to tailwind.config.cjs)
+  'prose-headings:font-bold',
+  'prose-headings:!mb-4',
+  'prose-p:!mb-4',
+  'prose-blockquote:!mb-4',
+  'prose-img:!my-6',
+  'prose-img:rounded-lg',
+  'prose-img:border',
+  'prose-img:border-slate-300',
+  'prose-img:dark:border-zinc-700',
+  'prose-pre:!my-6',
+  'prose-table:!mb-4',
+  'prose-ul:!mb-4',
+  'prose-ol:!mb-4',
+  'prose-code:before:content-[""]',
+  'prose-code:after:content-[""]',
+  'prose-code:font-fira',
+  'prose-pre:font-fira',
+]
+---
+
+<Document>
+  <Content>
+    <div class="flex flex-col gap-3">
+      {
+        heroImage && (
+          <Image
+            class="heroimage"
+            width={720}
+            height={360}
+            src={heroImage}
+            alt="heroimage"
+          />
+        )
+      }
+      <h2 class="text-2xl font-semibold">{title}</h2>
+      <div>{description}</div>
+      <hr class="border-top border-zinc-400" />
+      <article
+        class={`prose dark:prose-invert max-w-none ${mdcss.join(
+          ' '
+        )}`}
+      >
+        <slot />
+      </article>
+    </div>
+  </Content>
+</Document>
+
+<style>
+  .heroimage {
+    @apply border;
+    @apply border-slate-300;
+    @apply rounded-lg;
+  }
+  :global(.dark) .heroimage {
+    @apply border-zinc-700;
+  }
+</style>

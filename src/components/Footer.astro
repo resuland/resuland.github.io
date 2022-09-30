@@ -1,0 +1,31 @@
+---
+import { IoLogoReact } from 'react-icons/io5/index.js'
+const today = new Date()
+---
+
+<footer>
+  <div class="fcontainer">
+    <div class="cfot">
+      <div>
+        &copy; {today.getFullYear()} Valentino Di Giosaffatte. All rights reserved.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    @apply w-full;
+    @apply text-zinc-500;
+  }
+  .fcontainer {
+    @apply mx-auto;
+    @apply max-w-3xl;
+  }
+  .cfot {
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+    @apply p-4;
+  }
+</style>

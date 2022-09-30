@@ -1,0 +1,23 @@
+---
+export interface Props {
+  className?: string
+  title: string
+}
+
+const { className = '', title } = Astro.props
+---
+
+<div class={`${className} cv-sec-title`}>
+  <slot />
+  <span>{title}</span>
+</div>
+
+<style>
+  .cv-sec-title {
+    @apply flex;
+    @apply flex-wrap;
+    @apply items-center;
+    @apply text-xl;
+    @apply font-bold;
+  }
+</style>

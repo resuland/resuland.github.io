@@ -1,0 +1,47 @@
+---
+import Document from '../components/Document.astro'
+import Content from '../components/Content.astro'
+
+const posts = (await Astro.glob('./blog/*.{md,mdx}'))
+  .filter(post => !post.frontmatter.draft)
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.createdAt).valueOf() -
+      new Date(a.frontmatter.createdAt).valueOf()
+  )
+---
+
+<Document>
+  <Content>
+    <section>
+      <ul class="flex flex-col gap-3">
+        {
+          posts.map(post => (
+            <li class="flex flex-col gap-2">
+              <a href={post.url} class="hover:opacity-80 focus:opacity-50">
+                <div class="text-lg">{post.frontmatter.title}</div>
+                <div class="opacity-70">{post.frontmatter.description}</div>
+              </a>
+              <div class="flex gap-x-2 flex-wrap">
+                {post.frontmatter.tags.map((tag: string) => (
+                  <a href="" class="blog-entry-tag">
+                    {tag}
+                  </a>
+                ))}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </Content>
+</Document>
+
+<style>
+  .blog-entry-tag {
+    @apply text-blue-500;
+    @apply hover:opacity-80;
+    @apply focus:opacity-50;
+    @apply font-fira;
+  }
+</style>

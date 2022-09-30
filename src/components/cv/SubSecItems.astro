@@ -1,0 +1,18 @@
+---
+export interface Props {
+  className?: string
+}
+
+const { className = '' } = Astro.props
+---
+
+<section class={`${className} cv-sub-sec-items`}>
+  <slot />
+</section>
+
+<style>
+  .cv-sub-sec-items {
+    @apply flex;
+    @apply flex-col;
+  }
+</style>

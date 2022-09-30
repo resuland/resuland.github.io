@@ -1,0 +1,77 @@
+---
+import { IoAlbumsOutline, IoLogoRss, IoPawOutline, IoPersonOutline, IoTabletPortrait, IoTabletPortraitOutline, IoTriangle, IoTriangleOutline } from 'react-icons/io5/index.js'
+import HeaderLink from './HeaderLink.astro'
+import ThemeToggle from './ThemeToggle'
+// import DropdownMenu from './DropdownMenu'
+
+import { SITE_TITLE } from '../config'
+---
+
+<header>
+  <div class="hcontainer">
+    <nav>
+      <div class="navl">
+        <a href="/" class="group hover:opacity-80 focus:opacity-50">
+          <h2 class="navl-name">
+            {SITE_TITLE}
+          </h2>
+        </a>
+        <div class="navl-links">
+          <HeaderLink href="/blog">
+            <IoLogoRss />
+            <span class="hidden md:flex">Blog</span>
+          </HeaderLink>
+          <!-- <HeaderLink href="/cv">
+            <IoAlbumsOutline />
+            <span class="hidden md:flex">Cv</span>
+          </HeaderLink> -->
+        </div>
+      </div>
+      <div class="navr">
+        <ThemeToggle client:visible />
+        <!-- <div class="flex md:hidden">
+          <DropdownMenu client:visible />
+        </div> -->
+      </div>
+    </nav>
+  </div>
+</header>
+
+<style>
+  header {
+    @apply fixed;
+    @apply w-full;
+    @apply z-20;
+    @apply backdrop-blur-md;
+  }
+  .hcontainer {
+    @apply mx-auto;
+    @apply max-w-3xl;
+  }
+  nav {
+    @apply flex;
+    @apply items-center;
+    @apply justify-between;
+    @apply p-4;
+    @apply text-lg;
+  }
+  .navl {
+    @apply flex;
+    @apply gap-6;
+    @apply items-center;
+  }
+  .navl-name {
+    @apply font-semibold;
+    @apply tracking-tighter;
+    @apply text-xl;
+  }
+  .navl-links {
+    @apply flex;
+    @apply gap-4;
+  }
+  .navr {
+    @apply flex;
+    @apply gap-4;
+    @apply items-center;
+  }
+</style>

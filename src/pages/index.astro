@@ -1,0 +1,373 @@
+---
+import {
+  IoAt,
+  IoBookOutline,
+  IoChatbubbleEllipsesOutline,
+  IoCubeOutline,
+  IoEarthOutline,
+  IoExtensionPuzzleOutline,
+  IoFingerPrintOutline,
+  IoHeadsetOutline,
+  IoHeartOutline,
+  IoLanguageOutline,
+  IoLayersOutline,
+  IoLinkOutline,
+  IoLogoGithub,
+  IoLogoGitlab,
+  IoLogoLinkedin,
+  IoSchoolOutline,
+  IoShapesOutline,
+  IoTimeOutline,
+} from 'react-icons/io5/index.js'
+import Content from '../components/Content.astro'
+import CvSec from '../components/cv/Sec.astro'
+import CvSecTitle from '../components/cv/SecTitle.astro'
+import CvSubSec from '../components/cv/SubSec.astro'
+import CvSubSecItems from '../components/cv/SubSecItems.astro'
+import CvSubSecTitle from '../components/cv/SubSecTitle.astro'
+import Document from '../components/Document.astro'
+---
+
+<Document>
+  <Content className="">
+    <CvSec className="gap-4">
+      <!-- propic -->
+      <CvSec className="">
+        <div class="place-self-center rounded-full border border-zinc-900 border-spacing-4 dark:border-zinc-300 p-[1px]">
+          <img src="/propic.cut.jpg" alt="void" class="object-cover w-[100px] rounded-full" />
+        </div>
+      </CvSec>
+
+      <!-- links -->
+      <CvSec className="gap-3">
+        <CvSecTitle className="gap-2" title="Info">
+          <IoFingerPrintOutline />
+        </CvSecTitle>
+        <CvSubSec className="gap-2">
+          <CvSubSecItems className="gap-1">
+            <div class="cv-item-col">
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ad dolorem vitae nobis minus nemo, in repellendus voluptatem cupiditate repellat delectus, consectetur aliquam! Quidem
+                quasi distinctio voluptatum, reprehenderit voluptatibus fugiat?</span
+              >
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+      </CvSec>
+
+      <!-- links -->
+      <CvSec className="gap-3">
+        <CvSecTitle className="gap-2" title="Links">
+          <IoLinkOutline />
+        </CvSecTitle>
+        <CvSubSec className="gap-2">
+          <CvSubSecItems className="gap-1">
+            <div class="cv-item-col">
+              <IoLogoGithub />
+              <span>Github</span>
+              <a class="cv-item-link" href="http://www.github.com/resu-gh" target="_blank" rel="noopener noreferrer">resu-gh</a>
+            </div>
+            <div class="cv-item-col">
+              <IoLogoGitlab />
+              <span>Gitlab</span>
+              <a class="cv-item-link" href="http://www.gitlab.com/resu-gl" target="_blank" rel="noopener noreferrer">resu-gl</a>
+            </div>
+            <div class="cv-item-col">
+              <IoLogoLinkedin />
+              <span>LinkedIn</span>
+              <a class="cv-item-link" href="http://www.linkedin.com/in/valentino-di-giosaffatte-527a61243" target="_blank" rel="noopener noreferrer"> valentino-di-giosaffatte</a>
+            </div>
+            <div class="cv-item-col">
+              <IoEarthOutline />
+              <span>Website</span>
+              <a class="cv-item-link" href="https://resuland.github.io" target="_blank" rel="noopener noreferrer">resuland.github.io</a>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+      </CvSec>
+
+      <!-- languages -->
+      <CvSec className="gap-3">
+        <CvSecTitle className="gap-2" title="Languages">
+          <IoLanguageOutline />
+        </CvSecTitle>
+        <CvSubSec className="gap-2">
+          <CvSubSecTitle title="English" />
+          <CvSubSecItems className="gap-1">
+            <div class="cv-item-col">
+              <IoHeadsetOutline />
+              <span>Listening</span>
+              <span>C1</span>
+            </div>
+            <div class="cv-item-col">
+              <IoChatbubbleEllipsesOutline />
+              <span>Speaking</span>
+              <span>C1</span>
+            </div>
+            <div class="cv-item-col">
+              <IoBookOutline />
+              <span>Reading</span>
+              <span>C1</span>
+            </div>
+            <div class="cv-item-col">
+              <IoAt />
+              <span>Writing</span>
+              <span>C1</span>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+      </CvSec>
+
+      <!-- education -->
+      <CvSec className="gap-3">
+        <CvSecTitle className="gap-2" title="Education">
+          <IoSchoolOutline />
+        </CvSecTitle>
+        <CvSubSec className="gap-2">
+          <CvSubSecTitle title="LM-18 - Master's Degree in Computer Science" />
+          <CvSubSecItems className="gap-1">
+            <div class="cv-item-row">
+              <span>University of L'Aquila @ L'Aquila</span>
+              <span>Department of Information Engineering, Computer Science and Mathematics</span>
+              <span class="opacity-80">Models for incremental public transportation service design</span>
+              <span class="opacity-80">Fabrizio Rossi</span>
+              <span>110 / 110 cum laude</span>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+        <CvSubSec className="gap-2">
+          <CvSubSecTitle title="MU1 - Level-1 Master Course - Mobile and Web Technologies" />
+          <CvSubSecItems className="gap-1">
+            <div class="cv-item-row">
+              <span>University of L'Aquila @ L'Aquila</span>
+              <span>Department of Information Engineering, Computer Science and Mathematics</span>
+              <span>70 / 70 cum laude</span>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+        <CvSubSec className="gap-2">
+          <CvSubSecTitle title="L-31 - Bachelor's Degree in Computer Science" />
+          <CvSubSecItems className="gap-1">
+            <div class="cv-item-row">
+              <span>University of L'Aquila @ L'Aquila</span>
+              <span>Department of Information Engineering, Computer Science and Mathematics</span>
+              <span class="opacity-80">Computation and performance of Nash equilibria on Generalized Graph K-Coloring game</span>
+              <span class="opacity-80">Gianpiero Monaco</span>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+        <CvSubSec className="gap-2">
+          <CvSubSecTitle title="Classical High School" />
+          <CvSubSecItems className="gap-1">
+            <div class="cv-item-row">
+              <span>I.I.S. Vittorio Emanuele II @ Lanciano</span>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+      </CvSec>
+
+      <!-- work -->
+      <CvSec className="gap-3">
+        <CvSecTitle className="gap-2" title="Work">
+          <IoExtensionPuzzleOutline />
+        </CvSecTitle>
+        <CvSubSec className="gap-2">
+          <CvSubSecTitle className="gap-2" title="Open PhD position">
+            <IoTimeOutline />
+          </CvSubSecTitle>
+          <CvSubSecItems className="gap-1">
+            <div class="cv-item-row gap-1">
+              <span class="font-semibold">Dynamic Analysis Group (DAG) - University of Italian Switzerland (USI)</span>
+              <div class="cv-item-row">
+                <ul class="list-[circle] list-inside">
+                  <li>Prof. Walter Binder - University of Italian Switzerland</li>
+                  <li>Dr. Andrea Rosà - University of Italian Switzerland</li>
+                  <li>Dr. Matteo Basso - University of Italian Switzerland</li>
+                </ul>
+              </div>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+      </CvSec>
+
+      <!-- publications -->
+      <CvSec className="gap-3">
+        <CvSecTitle className="gap-2" title="Publications">
+          <IoLayersOutline />
+        </CvSecTitle>
+        <CvSubSec className="gap-2">
+          <CvSubSecTitle className="gap-2" title="Private Journal - Co-author">
+            <IoTimeOutline />
+          </CvSubSecTitle>
+          <CvSubSecItems className="gap-1">
+            <div class="cv-item-row">
+              <ul class="list-[circle] list-inside">
+                <li>Prof. Henry Muccini - University of L'Aquila</li>
+                <li>Prof. Mauro Caporuscio - Linnaeus University</li>
+                <li>Dr. Karthik Vaidhyanathan - University of L'Aquila</li>
+              </ul>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+      </CvSec>
+
+      <!-- interests -->
+      <CvSec className="gap-3">
+        <CvSecTitle className="gap-2" title="Interests">
+          <IoHeartOutline />
+        </CvSecTitle>
+        <CvSubSec className="gap-2">
+          <CvSubSecItems className="gap-1">
+            <div class="cv-item-col">
+              <span class="cv-item-tag">Programming Languages</span>
+              <span class="cv-item-tag">Compilers</span>
+              <span class="cv-item-tag">Operating Systems</span>
+              <span class="cv-item-tag">Computer Graphics</span>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+      </CvSec>
+
+      <!-- programming -->
+      <CvSec className="gap-3">
+        <CvSecTitle className="gap-2" title="Programming">
+          <IoCubeOutline />
+        </CvSecTitle>
+        <CvSubSec className="gap-2">
+          <CvSubSecTitle title="High" />
+          <CvSubSecItems className="gap-1">
+            <div class="cv-item-col">
+              <span class="cv-item-tag">C</span>
+              <span class="cv-item-tag">C++</span>
+              <span class="cv-item-tag">Rust</span>
+              <span class="cv-item-tag">Go</span>
+              <span class="cv-item-tag">Asm x86</span>
+              <span class="cv-item-tag">Asm ARM</span>
+              <span class="cv-item-tag">Asm Risc-V</span>
+              <span class="cv-item-tag">Python</span>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+        <CvSubSec className="gap-2">
+          <CvSubSecTitle title="Medium" />
+          <CvSubSecItems className="gap-1">
+            <div class="cv-item-col">
+              <span class="cv-item-tag">Lua</span>
+              <span class="cv-item-tag">Javascript</span>
+              <span class="cv-item-tag">Typescript</span>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+        <CvSubSec className="gap-2">
+          <CvSubSecTitle title="Low / Learning" />
+          <CvSubSecItems className="gap-1">
+            <div class="cv-item-col">
+              <span class="cv-item-tag">Zig</span>
+              <span class="cv-item-tag">V</span>
+              <span class="cv-item-tag">Dart</span>
+              <span class="cv-item-tag">Apl</span>
+              <span class="cv-item-tag">Haskell</span>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+        <CvSubSec className="gap-2">
+          <CvSubSecTitle title="Used" />
+          <CvSubSecItems className="gap-1">
+            <div class="cv-item-col">
+              <span class="cv-item-tag">Prolog</span>
+              <span class="cv-item-tag">Lisp</span>
+              <span class="cv-item-tag">ML</span>
+              <span class="cv-item-tag">C#</span>
+              <span class="cv-item-tag">Php</span>
+              <span class="cv-item-tag">Java</span>
+              <span class="cv-item-tag">Ruby</span>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+      </CvSec>
+
+      <!-- projects -->
+      <CvSec className="gap-3">
+        <CvSecTitle className="gap-2" title="Projects">
+          <IoShapesOutline />
+        </CvSecTitle>
+        <CvSubSec className="gap-2">
+          <CvSubSecTitle className="font-fira" title="dxvc" />
+          <CvSubSecItems className="gap-1">
+            <div class="cv-item-row !gap-1">
+              <span class="">Intel Pin profiler to count the number of SIMD instructions dynamically executed by a target program in a thread-sensitive manner</span>
+              <a class="cv-item-link" href="https://www.github.com/resu-gh/dxvc" target="_blank" rel="noopener noreferrer">resu-gh/dxvc</a>
+              <div class="cv-item-col">
+                <span class="cv-item-tag">C++</span>
+                <span class="cv-item-tag">Intel Pin</span>
+                <span class="cv-item-tag">Profiling</span>
+                <span class="cv-item-tag">JVM</span>
+                <span class="cv-item-tag">SIMD</span>
+                <span class="cv-item-tag">x86</span>
+              </div>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+        <CvSubSec className="gap-2">
+          <CvSubSecTitle title="rcp" />
+          <CvSubSecItems className="gap-1">
+            <div class="cv-item-row !gap-1">
+              <span class="">Agnostic transpiler for integrating and controlling non-ROS 2 robots within ROS 2 distributed virtual environments</span>
+              <a class="cv-item-link" href="#" target="_blank" rel="noopener noreferrer">closed source</a>
+              <div class="cv-item-col">
+                <span class="cv-item-tag">Python</span>
+                <span class="cv-item-tag">Redis</span>
+                <span class="cv-item-tag">ROS 2</span>
+                <span class="cv-item-tag">Docker</span>
+              </div>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+        <CvSubSec className="gap-2">
+          <CvSubSecTitle title="dmon" />
+          <CvSubSecItems className="gap-1">
+            <div class="cv-item-row !gap-1">
+              <span class="">Agnostic distributed multithreaded monitoring system and workload generator for microservice-based applications</span>
+              <a class="cv-item-link" href="#" target="_blank" rel="noopener noreferrer">closed source</a>
+              <div class="cv-item-col">
+                <span class="cv-item-tag">Go</span>
+                <span class="cv-item-tag">Redis</span>
+                <span class="cv-item-tag">Docker</span>
+              </div>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+      </CvSec>
+    </CvSec>
+  </Content>
+</Document>
+
+<style>
+  .cv-item-col {
+    @apply flex;
+    @apply flex-wrap;
+    @apply items-center;
+    @apply gap-2;
+  }
+  .cv-item-row {
+    @apply flex;
+    @apply flex-wrap;
+    @apply flex-col;
+  }
+  .cv-item-link {
+    @apply text-blue-500;
+    @apply hover:opacity-80;
+    @apply focus:opacity-50;
+    @apply font-fira;
+  }
+  .cv-item-tag {
+    @apply px-1;
+    @apply bg-orange-200;
+    @apply rounded-sm;
+    @apply font-fira;
+    @apply text-sm;
+  }
+  :global(.dark) .cv-item-tag {
+    @apply bg-zinc-700;
+  }
+</style>

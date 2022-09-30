@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  @apply break-words;
+  @apply bg-orange-50;
+  @apply dark:bg-zinc-900;
+  @apply text-zinc-900;
+  @apply dark:text-zinc-300;
+  @apply break-words;
+  @apply leading-6;
+  @apply transition-colors;
+  @apply duration-500;
+  @apply font-opensans;
+}
+
+* {
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+
+/*
+.astro-code {
+  counter-reset: step;
+  counter-increment: step 0;
+  @apply mb-4;
+  @apply p-4;
+  @apply rounded-xl;
+}
+
+.astro-code .line::before {
+  content: counter(step);
+  counter-increment: step;
+  @apply w-4;
+  @apply inline-block;
+  @apply mr-6;
+  @apply text-center;
+  @apply text-zinc-400;
+}
+*/

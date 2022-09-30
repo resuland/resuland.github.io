@@ -1,0 +1,431 @@
+---
+import {
+  IoAt,
+  IoBookOutline,
+  IoCalendarClearOutline,
+  IoCallOutline,
+  IoChatbubbleOutline,
+  IoCubeOutline,
+  IoEarthOutline,
+  IoExtensionPuzzleOutline,
+  IoHeadsetOutline,
+  IoHeartOutline,
+  IoLanguageOutline,
+  IoLayersOutline,
+  IoLinkOutline,
+  IoLogoGithub,
+  IoLogoGitlab,
+  IoLogoLinkedin,
+  IoMailOutline,
+  IoMapOutline,
+  IoPrintOutline,
+  IoReaderOutline,
+  IoSchoolOutline,
+  IoShapesOutline,
+  IoTimeOutline,
+} from 'react-icons/io5/index.js'
+import BaseHead from '../components/BaseHead.astro'
+
+import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body class="bg-white dark:bg-white">
+    <main class="flex flex-col w-screen sm:w-fit space-y-4 print:p-0 print:space-y-0 print:contents">
+      <!-- page 1 -->
+      <article
+        class="bg-white py-4 px-6 space-y-3 font-nunito w-screen md:h-[297mm] md:w-[210mm] print:h-[297mm] print:w-[210mm] !place-content-start shadow-2xl print:shadow-none print:font-nunito text-neutral-700"
+      >
+        <!-- front -->
+        <div class="flex place-content-end space-x-4 sm:place-content-between print:place-content-between">
+          <span class="text-zinc-400">Curriculum Vitae</span>
+          <span class="text-zinc-400">Page 1 / 3</span>
+        </div>
+        <!-- separator -->
+        <hr class="w-full h-0.5 bg-zinc-300" />
+        <!-- header -->
+        <div class="flex flex-col space-y-4 sm:space-y-0 sm:place-content-between sm:flex-row print:space-y-0 print:place-content-between print:flex-row">
+          <div class="flex flex-col space-y-4 sm:space-y-0 sm:place-items-stretch sm:space-x-6 sm:flex-row print:space-y-0 print:place-items-stretch print:space-x-6 print:flex-row">
+            <div class="place-self-start sm:place-self-stretch print:place-self-stretch">
+              <img src="/propic.cut.jpg" alt="void" class="object-cover w-[90px] rounded-full" />
+            </div>
+            <div class="flex flex-col place-items-start sm:place-content-center sm:place-items-start print:place-content-center print:place-items-start">
+              <span class="text-2xl text-orange-500">Valentino Di Giosaffatte</span>
+              <span class="text-zinc-500">Computer scientist / System programmer</span>
+            </div>
+          </div>
+          <div class="flex flex-col place-items-start sm:place-content-center sm:place-items-end print:place-content-center print:place-items-end">
+            <div class="flex space-x-2 place-items-center">
+              <IoCalendarClearOutline className="text-orange-500 visible sm:invisible print:invisible" />
+              <span class="">11 January 1994</span>
+              <IoCalendarClearOutline className="text-orange-500 invisible sm:visible print:visible" />
+            </div>
+            <div class="flex space-x-2 place-items-center text-right">
+              <IoMapOutline className="text-orange-500 visible sm:invisible print:invisible" />
+              <span class="">Lanciano, Chieti, Abruzzo, Italy</span>
+              <IoMapOutline className="text-orange-500 invisible sm:visible print:visible" />
+            </div>
+          </div>
+        </div>
+        <!-- separator -->
+        <hr class="w-full h-0.5 bg-zinc-300" />
+        <!-- body -->
+        <div class="flex flex-col gap-3">
+          <!-- body - contacts -->
+          <div class="flex flex-col gap-2">
+            <div class="flex flex-wrap items-center text-orange-500 text-xl gap-2">
+              <IoAt />
+              <span>Contacts</span>
+            </div>
+            <div class="flex flex-col ml-7 gap-1">
+              <div class="flex flex-wrap items-center gap-2">
+                <IoMailOutline />
+                <span>Email</span>
+                <a class="text-blue-500 font-fira text-sm" href="mailto:valentino.digiosaffatte@student.univaq.it">valentino.digiosaffatte@student.univaq.it</a>
+              </div>
+            </div>
+          </div>
+          <!-- body - links -->
+          <div class="flex flex-col gap-2">
+            <div class="flex flex-wrap items-center text-orange-500 text-xl gap-2">
+              <IoLinkOutline />
+              <span>Links</span>
+            </div>
+            <div class="flex flex-col ml-7 gap-1">
+              <div class="flex flex-wrap items-center gap-2">
+                <IoLogoGithub />
+                <span>Github</span>
+                <a class="text-blue-500 font-fira text-sm" href="https://www.github.com/resu-gh" target="_blank" rel="noopener noreferrer">github.com/resu-gh</a>
+              </div>
+              <div class="flex flex-wrap items-center gap-2">
+                <IoLogoGitlab />
+                <span>Gitlab</span>
+                <a class="text-blue-500 font-fira text-sm" href="https://www.gitlab.com/resu-gl" target="_blank" rel="noopener noreferrer">gitlab.com/resu-gl</a>
+              </div>
+              <div class="flex flex-wrap items-center gap-2">
+                <IoLogoLinkedin />
+                <span>LinkedIn</span>
+                <a class="text-blue-500 font-fira text-sm" href="https://www.linkedin.com/in/valentino-di-giosaffatte-527a61243" target="_blank" rel="noopener noreferrer">
+                  linkedin.com/in/valentino-di-giosaffatte-527a61243
+                </a>
+              </div>
+              <div class="flex flex-wrap items-center gap-2">
+                <IoEarthOutline />
+                <span>Website</span>
+                <a class="text-blue-500 font-fira text-sm" href="https://resuland.github.io" target="_blank" rel="noopener noreferrer">resuland.github.io</a>
+              </div>
+            </div>
+          </div>
+          <!-- body - languages -->
+          <div class="flex flex-col gap-2">
+            <div class="flex flex-wrap items-center text-orange-500 text-xl gap-2">
+              <IoLanguageOutline />
+              <span>Languages</span>
+            </div>
+            <div class="flex flex-col ml-7 gap-1">
+              <div class="flex flex-wrap items-center font-semibold text-lg">
+                <span>English</span>
+              </div>
+              <div class="flex flex-col gap-1">
+                <div class="flex flex-wrap items-center gap-2">
+                  <IoHeadsetOutline />
+                  <span>Listening</span>
+                  <span>C1</span>
+                </div>
+                <div class="flex flex-wrap items-center gap-2">
+                  <IoChatbubbleOutline />
+                  <span>Speaking</span>
+                  <span>C1</span>
+                </div>
+                <div class="flex flex-wrap items-center gap-2">
+                  <IoBookOutline />
+                  <span>Reading</span>
+                  <span>C1</span>
+                </div>
+                <div class="flex flex-wrap items-center gap-2">
+                  <IoReaderOutline />
+                  <span>Writing</span>
+                  <span>C1</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- body - educations -->
+          <div class="flex flex-col gap-2">
+            <div class="flex flex-wrap items-center text-orange-500 text-xl gap-2">
+              <IoSchoolOutline />
+              <span>Education</span>
+            </div>
+            <div class="flex flex-col ml-7 gap-1">
+              <div class="flex flex-wrap items-center font-semibold text-lg">
+                <span>LM-18 - Master's Degree in Computer Science</span>
+              </div>
+              <div class="flex flex-wrap flex-col">
+                <span>University of L'Aquila @ L'Aquila</span>
+                <span>Department of Information Engineering, Computer Science and Mathematics</span>
+                <span class="opacity-80">Models for incremental public transportation service design</span>
+                <span class="opacity-80">Supervisor - Fabrizio Rossi</span>
+                <span>110 / 110 - cum laude</span>
+              </div>
+            </div>
+            <div class="flex flex-col ml-7 gap-1">
+              <div class="flex flex-wrap items-center font-semibold text-lg">
+                <span>LMU1 - Level-1 Master Course - Mobile and Web Technologies</span>
+              </div>
+              <div class="flex flex-wrap flex-col">
+                <span>University of L'Aquila @ L'Aquila</span>
+                <span>Department of Information Engineering, Computer Science and Mathematics</span>
+                <span>70 / 70 - cum laude</span>
+              </div>
+            </div>
+            <div class="flex flex-col ml-7 gap-1">
+              <div class="flex flex-wrap items-center font-semibold text-lg">
+                <span>L-31 - Bachelor's Degree in Computer Science</span>
+              </div>
+              <div class="flex flex-wrap flex-col">
+                <span>University of L'Aquila @ L'Aquila</span>
+                <span>Department of Information Engineering, Computer Science and Mathematics</span>
+                <span class="opacity-80">Computation and performance of Nash equilibria on Generalized Graph K-Coloring game</span>
+                <span class="opacity-80">Supervisor - Gianpiero Monaco</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- page 2 -->
+      <article
+        class="bg-white py-4 px-6 space-y-3 font-nunito w-screen md:h-[297mm] md:w-[210mm] print:h-[297mm] print:w-[210mm] !place-content-start shadow-2xl print:shadow-none print:font-nunito text-neutral-700"
+      >
+        <!-- front -->
+        <div class="flex place-content-end space-x-4 sm:place-content-between print:place-content-between">
+          <span class="text-zinc-400">Curriculum Vitae</span>
+          <span class="text-zinc-400">Page 2 / 3</span>
+        </div>
+        <!-- separator -->
+        <hr class="w-full h-0.5 bg-zinc-300" />
+        <!-- body -->
+        <div class="flex flex-col gap-3">
+
+          <div class="flex flex-col gap-2">
+            <div class="flex flex-col ml-7 gap-1">
+              <div class="flex flex-wrap items-center font-semibold text-lg">
+                <span>Classical High School</span>
+              </div>
+              <div class="flex flex-wrap flex-col">
+                <span>I.I.S. Vittorio Emanuele II @ Lanciano</span>
+              </div>
+            </div>
+          </div>
+          <!-- body - work -->
+          <div class="flex flex-col gap-2">
+            <div class="flex flex-wrap items-center text-orange-500 text-xl gap-2">
+              <IoExtensionPuzzleOutline />
+              <span>Work</span>
+            </div>
+            <div class="flex flex-col ml-7 gap-1">
+              <div class="flex flex-wrap items-center font-semibold text-lg gap-2">
+                <IoTimeOutline />
+                <span>Open PhD position</span>
+              </div>
+              <div class="flex flex-col gap-1">
+                <span class="font-semibold">Dynamic Analysis Group (DAG) - University of Italian Switzerland (USI)</span>
+                <div class="flex flex-wrap flex-col gap-1">
+                  <ul class="list-[circle] list-inside">
+                    <li>Prof. Walter Binder - University of Italian Switzerland</li>
+                    <li>Dr. Andrea Rosà - University of Italian Switzerland</li>
+                    <li>Dr. Matteo Basso - University of Italian Switzerland</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- body - publications -->
+        <div class="flex flex-col gap-2">
+          <div class="flex flex-wrap items-center text-orange-500 text-xl gap-2">
+            <IoLayersOutline />
+            <span>Publications</span>
+          </div>
+          <div class="flex flex-col ml-7 gap-1">
+            <div class="flex flex-wrap items-center font-semibold text-lg gap-2">
+              <IoTimeOutline />
+              <span>Private Journal - Co-author</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="flex flex-wrap flex-col gap-1">
+                <ul class="list-[circle] list-inside">
+                  <li>Prof. Henry Muccini - University of L'Aquila</li>
+                  <li>Prof. Mauro Caporuscio - Linnaeus University</li>
+                  <li>Dr. Karthik Vaidhyanathan - University of L'Aquila</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- body - interests -->
+        <div class="flex flex-col gap-2">
+          <div class="flex flex-wrap items-center text-orange-500 text-xl gap-2">
+            <IoHeartOutline />
+            <span>Interests</span>
+          </div>
+          <div class="flex flex-col ml-7 gap-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Programming Languages</span>
+              <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Compilers</span>
+              <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Operating Systems</span>
+              <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Computer Graphics</span>
+            </div>
+          </div>
+        </div>
+        <!-- body - programming -->
+        <div class="flex flex-col gap-2">
+          <div class="flex flex-wrap items-center text-orange-500 text-xl gap-2">
+            <IoCubeOutline />
+            <span>Programming</span>
+          </div>
+          <div class="flex flex-col ml-7 gap-2">
+            <div class="flex flex-wrap items-center font-semibold text-lg gap-2">
+              <span>High</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">C</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">C++</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Rust</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Go</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Asm x86</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Asm ARM</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Asm Risc-V</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Python</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col ml-7 gap-2">
+            <div class="flex flex-wrap items-center font-semibold text-lg gap-2">
+              <span>Medium</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Lua</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Javascript</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Typescript</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col ml-7 gap-2">
+            <div class="flex flex-wrap items-center font-semibold text-lg gap-2">
+              <span>Low / Learning</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Zig</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">V</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Dart</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Apl</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Haskell</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col ml-7 gap-2">
+            <div class="flex flex-wrap items-center font-semibold text-lg gap-2">
+              <span>Used</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Prolog</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Lisp</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">ML</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">C#</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Php</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Java</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Ruby</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- body - projects -->
+        <div class="flex flex-col gap-2">
+          <div class="flex flex-wrap items-center text-orange-500 text-xl gap-2">
+            <IoShapesOutline />
+            <span>Projects</span>
+          </div>
+          <div class="flex flex-col ml-7 gap-2">
+            <div class="flex flex-wrap items-center font-semibold text-lg gap-2">
+              <span class="font-fira">dxvc</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <span class="">@ USI</span>
+              <span class="">Intel Pin profiler to count the number of SIMD instructions dynamically executed by a target program in a thread-sensitive manner</span>
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">C++</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Intel Pin</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Profiling</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">JVM</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">SIMD</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">x86</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Hotspot</span>
+              </div>
+              <a class="text-blue-500 font-fira text-sm" href="https://www.github.com/resu-gh/dxvc" target="_blank" rel="noopener noreferrer"> resu-gh/dxvc</a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- page 3 -->
+      <article
+        class="bg-white py-4 px-6 space-y-3 font-nunito w-screen md:h-[297mm] md:w-[210mm] print:h-[297mm] print:w-[210mm] !place-content-start shadow-2xl print:shadow-none print:font-nunito text-neutral-700"
+      >
+        <!-- front -->
+        <div class="flex place-content-end space-x-4 sm:place-content-between print:place-content-between">
+          <span class="text-zinc-400">Curriculum Vitae</span>
+          <span class="text-zinc-400">Page 3 / 3</span>
+        </div>
+        <!-- separator -->
+        <hr class="w-full h-0.5 bg-zinc-300" />
+        <!-- body -->
+        <div class="flex flex-col gap-3">
+          <!-- body - projects (continue) -->
+          <div class="flex flex-col gap-2">
+            <div class="flex flex-col ml-7 gap-2">
+              <div class="flex flex-wrap items-center font-semibold text-lg gap-2">
+                <span class="font-fira">rcp</span>
+              </div>
+              <div class="flex flex-col gap-1">
+                <span class="">@ UNIVAQ</span>
+                <span class="">Agnostic transpiler for integrating and controlling non-ROS 2 robots within ROS 2 distributed virtual environments</span>
+                <div class="flex flex-wrap items-center gap-2">
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Python</span>
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Redis</span>
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">ROS 2</span>
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Docker</span>
+                </div>
+                <a class="text-blue-500 font-fira text-sm" href="#" target="_blank" rel="noopener noreferrer">closed source</a>
+              </div>
+            </div>
+            <div class="flex flex-col ml-7 gap-2">
+              <div class="flex flex-wrap items-center font-semibold text-lg gap-2">
+                <span class="font-fira">dmon</span>
+              </div>
+              <div class="flex flex-col gap-1">
+                <span class="">@ UNIVAQ</span>
+                <span class="">Agnostic distributed multithreaded monitoring system and workload generator for microservice-based applications</span>
+                <div class="flex flex-wrap items-center gap-2">
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Go</span>
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Redis</span>
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Docker</span>
+                </div>
+                <a class="text-blue-500 font-fira text-sm" href="#" target="_blank" rel="noopener noreferrer">closed source</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <button class="bg-zinc-900 text-white rounded-md fixed top-[50%] right-10 p-3 text-xl print:hidden hover:opacity-80 focus:opacity-50" onclick="window.print()">
+      <IoPrintOutline />
+    </button>
+  </body>
+</html>
