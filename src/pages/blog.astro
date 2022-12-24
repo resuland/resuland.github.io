@@ -38,14 +38,16 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}'))
 
 <style>
   .blog-entry-tag {
+    @apply px-1;
     @apply bg-blue-500;
     @apply text-white;
-    @apply text-xs;
-    @apply rounded-xl;
-    @apply px-2;
-    @apply py-0.5;
+    @apply rounded-sm;
+    @apply font-fira;
+    @apply text-sm;
     @apply hover:opacity-80;
     @apply focus:opacity-50;
-    @apply font-fira;
   }
+  /* :global(.dark) .blog-entry-tag {
+    @apply bg-zinc-700;
+  } */
 </style>

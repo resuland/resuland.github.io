@@ -46,10 +46,7 @@ import Document from '../components/Document.astro'
         <CvSubSec className="gap-2">
           <CvSubSecItems className="gap-1">
             <div class="cv-item-col">
-              <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ad dolorem vitae nobis minus nemo, in repellendus voluptatem cupiditate repellat delectus, consectetur aliquam! Quidem
-                quasi distinctio voluptatum, reprehenderit voluptatibus fugiat?</span
-              >
+              <span>Hi!</span>
             </div>
           </CvSubSecItems>
         </CvSubSec>
@@ -130,7 +127,7 @@ import Document from '../components/Document.astro'
               <span>University of L'Aquila @ L'Aquila</span>
               <span>Department of Information Engineering, Computer Science and Mathematics</span>
               <span class="opacity-80">Models for incremental public transportation service design</span>
-              <span class="opacity-80">Fabrizio Rossi</span>
+              <span class="opacity-80">Supervisor - Fabrizio Rossi</span>
               <span>110 / 110 cum laude</span>
             </div>
           </CvSubSecItems>
@@ -152,7 +149,7 @@ import Document from '../components/Document.astro'
               <span>University of L'Aquila @ L'Aquila</span>
               <span>Department of Information Engineering, Computer Science and Mathematics</span>
               <span class="opacity-80">Computation and performance of Nash equilibria on Generalized Graph K-Coloring game</span>
-              <span class="opacity-80">Gianpiero Monaco</span>
+              <span class="opacity-80">Supervisor - Gianpiero Monaco</span>
             </div>
           </CvSubSecItems>
         </CvSubSec>
@@ -171,6 +168,23 @@ import Document from '../components/Document.astro'
         <CvSecTitle className="gap-2" title="Work">
           <IoExtensionPuzzleOutline />
         </CvSecTitle>
+        <CvSubSec className="gap-2">
+          <CvSubSecTitle className="gap-2" title="Collaborator researcher">
+            <IoTimeOutline />
+          </CvSubSecTitle>
+          <CvSubSecItems className="gap-1">
+            <div class="cv-item-row gap-1">
+              <span class="font-semibold">Software Engineer Group - University of L'Aquila</span>
+              <div class="cv-item-row">
+                <ul class="list-[circle] list-inside">
+                  <li>Prof. Henry Muccini - University of L'Aquila</li>
+                  <li>Prof. Mauro Caporuscio - Linnaeus University</li>
+                  <li>Dr. Karthik Vaidhyanathan - University of L'Aquila</li>
+                </ul>
+              </div>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
         <CvSubSec className="gap-2">
           <CvSubSecTitle className="gap-2" title="Open PhD position">
             <IoTimeOutline />
@@ -309,6 +323,18 @@ import Document from '../components/Document.astro'
           </CvSubSecItems>
         </CvSubSec>
         <CvSubSec className="gap-2">
+          <CvSubSecTitle title="wyvern" />
+          <CvSubSecItems className="gap-1">
+            <div class="cv-item-row !gap-1">
+              <span class="">Thread-safe and re-entrant LALR(1) parser generator</span>
+              <a class="cv-item-link" href="https://github.com/resu-gh/wyvern" target="_blank" rel="noopener noreferrer">resu-gh/wyvern</a>
+              <div class="cv-item-col">
+                <span class="cv-item-tag">C++</span>
+              </div>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+        <CvSubSec className="gap-2">
           <CvSubSecTitle title="rcp" />
           <CvSubSecItems className="gap-1">
             <div class="cv-item-row !gap-1">
@@ -317,7 +343,7 @@ import Document from '../components/Document.astro'
               <div class="cv-item-col">
                 <span class="cv-item-tag">Python</span>
                 <span class="cv-item-tag">Redis</span>
-                <span class="cv-item-tag">ROS 2</span>
+                <span class="cv-item-tag">ROS-2</span>
                 <span class="cv-item-tag">Docker</span>
               </div>
             </div>
@@ -327,8 +353,35 @@ import Document from '../components/Document.astro'
           <CvSubSecTitle title="dmon" />
           <CvSubSecItems className="gap-1">
             <div class="cv-item-row !gap-1">
-              <span class="">Agnostic distributed multithreaded monitoring system and workload generator for microservice-based applications</span>
-              <a class="cv-item-link" href="#" target="_blank" rel="noopener noreferrer">closed source</a>
+              <span class="">Multithreaded monitoring system for monolithic or microservice-based Docker-powered applications</span>
+              <a class="cv-item-link" href="https://github.com/rootvr/dmon" target="_blank" rel="noopener noreferrer">rootvr/dmon</a>
+              <div class="cv-item-col">
+                <span class="cv-item-tag">Go</span>
+                <span class="cv-item-tag">Redis</span>
+                <span class="cv-item-tag">Docker</span>
+              </div>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+        <CvSubSec className="gap-2">
+          <CvSubSecTitle title="dmon-xdriver" />
+          <CvSubSecItems className="gap-1">
+            <div class="cv-item-row !gap-1">
+              <span class="">Multithreaded dmon + wgen experiments executor</span>
+              <a class="cv-item-link" href="https://github.com/rootvr/dmon-xdriver" target="_blank" rel="noopener noreferrer">rootvr/dmon-xdriver</a>
+              <div class="cv-item-col">
+                <span class="cv-item-tag">Rust</span>
+                <span class="cv-item-tag">Redis</span>
+              </div>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+        <CvSubSec className="gap-2">
+          <CvSubSecTitle title="wgen" />
+          <CvSubSecItems className="gap-1">
+            <div class="cv-item-row !gap-1">
+              <span class="">Multithreaded workload generator for monolithic or microservice-based Docker-powered applications</span>
+              <a class="cv-item-link" href="https://github.com/rootvr/wgen" target="_blank" rel="noopener noreferrer">rootvr/wgen</a>
               <div class="cv-item-col">
                 <span class="cv-item-tag">Go</span>
                 <span class="cv-item-tag">Redis</span>
