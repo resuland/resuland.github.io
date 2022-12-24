@@ -5,8 +5,10 @@ description: 'Paper analysis'
 pubDate: 'Dec 23 2022'
 heroImage: ''
 tags:
-  - Compilers
-  - Programming languages
+  - compilers
+  - programming languages
+  - optimization
+  - virtual machines
 ---
 
 ## Abstract
