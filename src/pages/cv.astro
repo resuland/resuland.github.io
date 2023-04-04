@@ -179,6 +179,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
               <div class="flex flex-wrap flex-col">
                 <span>University of L'Aquila @ L'Aquila</span>
                 <span>Department of Information Engineering, Computer Science and Mathematics</span>
+                <span class="opacity-80">Supervisor - Henry Muccini</span>
                 <span>70 / 70 - cum laude</span>
               </div>
             </div>
@@ -209,7 +210,6 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
         <hr class="w-full h-0.5 bg-zinc-300" />
         <!-- body -->
         <div class="flex flex-col gap-3">
-
           <div class="flex flex-col gap-2">
             <div class="flex flex-col ml-7 gap-1">
               <div class="flex flex-wrap items-center font-semibold text-lg">
@@ -229,7 +229,22 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
             <div class="flex flex-col ml-7 gap-1">
               <div class="flex flex-wrap items-center font-semibold text-lg gap-2">
                 <IoTimeOutline />
-                <span>Open PhD position</span>
+                <span>Collaborator researcher</span>
+              </div>
+              <div class="flex flex-col gap-1">
+                <span class="font-semibold">Software Engineer Group - University of L'Aquila (UNIVAQ)</span>
+                <div class="flex flex-wrap flex-col gap-1">
+                  <ul class="list-[circle] list-inside">
+                    <li>Prof. Henry Muccini - University of L'Aquila</li>
+                    <li>Prof. Mauro Caporuscio - Linnaeus University</li>
+                    <li>Dr. Karthik Vaidhyanathan - University of L'Aquila</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col ml-7 gap-1">
+              <div class="flex flex-wrap items-center font-semibold text-lg gap-2">
+                <span>Collaborator researcher - Open PhD position</span>
               </div>
               <div class="flex flex-col gap-1">
                 <span class="font-semibold">Dynamic Analysis Group (DAG) - University of Italian Switzerland (USI)</span>
@@ -253,7 +268,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
           <div class="flex flex-col ml-7 gap-1">
             <div class="flex flex-wrap items-center font-semibold text-lg gap-2">
               <IoTimeOutline />
-              <span>Private Journal - Co-author</span>
+              <span>Conference or Journal - Co-author</span>
             </div>
             <div class="flex flex-col gap-1">
               <div class="flex flex-wrap flex-col gap-1">
@@ -298,9 +313,8 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
                 <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Rust</span>
                 <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Go</span>
                 <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Asm x86</span>
-                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Asm ARM</span>
-                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Asm Risc-V</span>
                 <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Python</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Lua</span>
               </div>
             </div>
           </div>
@@ -310,7 +324,8 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
             </div>
             <div class="flex flex-col gap-1">
               <div class="flex flex-wrap items-center gap-2">
-                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Lua</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Asm ARM</span>
+                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Asm Risc-V</span>
                 <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Javascript</span>
                 <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Typescript</span>
               </div>
@@ -347,32 +362,6 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
             </div>
           </div>
         </div>
-        <!-- body - projects -->
-        <div class="flex flex-col gap-2">
-          <div class="flex flex-wrap items-center text-orange-500 text-xl gap-2">
-            <IoShapesOutline />
-            <span>Projects</span>
-          </div>
-          <div class="flex flex-col ml-7 gap-2">
-            <div class="flex flex-wrap items-center font-semibold text-lg gap-2">
-              <span class="font-fira">dxvc</span>
-            </div>
-            <div class="flex flex-col gap-1">
-              <span class="">@ USI</span>
-              <span class="">Intel Pin profiler to count the number of SIMD instructions dynamically executed by a target program in a thread-sensitive manner</span>
-              <div class="flex flex-wrap items-center gap-2">
-                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">C++</span>
-                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Intel Pin</span>
-                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Profiling</span>
-                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">JVM</span>
-                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">SIMD</span>
-                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">x86</span>
-                <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Hotspot</span>
-              </div>
-              <a class="text-blue-500 font-fira text-sm" href="https://www.github.com/resu-gh/dxvc" target="_blank" rel="noopener noreferrer"> resu-gh/dxvc</a>
-            </div>
-          </div>
-        </div>
       </article>
       <!-- page 3 -->
       <article
@@ -387,37 +376,113 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
         <hr class="w-full h-0.5 bg-zinc-300" />
         <!-- body -->
         <div class="flex flex-col gap-3">
-          <!-- body - projects (continue) -->
+          <!-- body - projects -->
           <div class="flex flex-col gap-2">
-            <div class="flex flex-col ml-7 gap-2">
+            <div class="flex flex-wrap items-center text-orange-500 text-xl gap-2">
+              <IoShapesOutline />
+              <span>Projects</span>
+            </div>
+            <div class="flex flex-col ml-7 gap-0">
               <div class="flex flex-wrap items-center font-semibold text-lg gap-2">
-                <span class="font-fira">rcp</span>
+                <span class="">dxvc</span>
               </div>
-              <div class="flex flex-col gap-1">
-                <span class="">@ UNIVAQ</span>
-                <span class="">Agnostic transpiler for integrating and controlling non-ROS 2 robots within ROS 2 distributed virtual environments</span>
-                <div class="flex flex-wrap items-center gap-2">
+              <div class="flex flex-col gap-0">
+                <span class="opacity-80">@ USI (Dynamic Analysis Group)</span>
+                <span class="">x86 SIMD instruction profiler - thread-sensitive dynamically executed SIMD instructions counter</span>
+                <div class="flex flex-wrap items-center gap-2 my-1">
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">C++</span>
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Intel Pin</span>
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Profiling</span>
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">JVM</span>
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">SIMD</span>
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">x86</span>
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Hotspot</span>
+                </div>
+                <a class="text-blue-500 font-fira text-sm" href="https://www.github.com/resu-gh/dxvc" target="_blank" rel="noopener noreferrer"> resu-gh/dxvc</a>
+              </div>
+            </div>
+            <div class="flex flex-col ml-7 gap-0">
+              <div class="flex flex-wrap items-center font-semibold text-lg gap-2">
+                <span class="">wyvern</span>
+              </div>
+              <div class="flex flex-col gap-0">
+                <span class="">Thread-safe and re-entrant LALR(1) parser generator</span>
+                <div class="flex flex-wrap items-center gap-2 my-1">
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">C++</span>
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Parser generator</span>
+                </div>
+                <a class="text-blue-500 font-fira text-sm" href="https://www.github.com/resu-gh/wyvern" target="_blank" rel="noopener noreferrer"> resu-gh/wyvern</a>
+              </div>
+            </div>
+            <div class="flex flex-col ml-7 gap-0">
+              <div class="flex flex-wrap items-center font-semibold text-lg gap-2">
+                <span class="">rcp</span>
+              </div>
+              <div class="flex flex-col gap-0">
+                <span class="opacity-80">@ UNIVAQ (Intelligent Systems and Robotics Laboratory)</span>
+                <span class="">Configuration compiler for integrating and controlling non-ROS 2 robots within ROS 2 distributed virtual environments</span>
+                <div class="flex flex-wrap items-center gap-2 mt-1">
                   <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Python</span>
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Robotics</span>
                   <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Redis</span>
                   <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">ROS 2</span>
                   <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Docker</span>
                 </div>
-                <a class="text-blue-500 font-fira text-sm" href="#" target="_blank" rel="noopener noreferrer">closed source</a>
               </div>
             </div>
-            <div class="flex flex-col ml-7 gap-2">
+            <div class="flex flex-col ml-7 gap-0">
               <div class="flex flex-wrap items-center font-semibold text-lg gap-2">
-                <span class="font-fira">dmon</span>
+                <span class="">dmon</span>
               </div>
-              <div class="flex flex-col gap-1">
-                <span class="">@ UNIVAQ</span>
-                <span class="">Agnostic distributed multithreaded monitoring system and workload generator for microservice-based applications</span>
-                <div class="flex flex-wrap items-center gap-2">
+              <div class="flex flex-col gap-0">
+                <span class="opacity-80">@ UNIVAQ (Software Engineer Group)</span>
+                <span class="">Monitoring system for microservice-based Docker-powered applications</span>
+                <div class="flex flex-wrap items-center gap-2 mt-1">
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Go</span>
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Redis</span>
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Docker</span>
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Kubernetes</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col ml-7 gap-0">
+              <div class="flex flex-wrap items-center font-semibold text-lg gap-2">
+                <span class="">wgen</span>
+              </div>
+              <div class="flex flex-col gap-0">
+                <span class="opacity-80">@ UNIVAQ (Software Engineer Group)</span>
+                <span class="">Workload generator for microservice-based Docker-powered applications</span>
+                <div class="flex flex-wrap items-center gap-2 mt-1">
                   <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Go</span>
                   <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Redis</span>
                   <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Docker</span>
                 </div>
-                <a class="text-blue-500 font-fira text-sm" href="#" target="_blank" rel="noopener noreferrer">closed source</a>
+              </div>
+            </div>
+            <div class="flex flex-col ml-7 gap-0">
+              <div class="flex flex-wrap items-center font-semibold text-lg gap-2">
+                <span class="">dmon-xdriver</span>
+              </div>
+              <div class="flex flex-col gap-0">
+                <span class="opacity-80">@ UNIVAQ (Software Engineer Group)</span>
+                <span class="">Test executor for dmon + wgen</span>
+                <div class="flex flex-wrap items-center gap-2 mt-1">
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Rust</span>
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Redis</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col ml-7 gap-0">
+              <div class="flex flex-wrap items-center font-semibold text-lg gap-2">
+                <span class="">dmon-xflow</span>
+              </div>
+              <div class="flex flex-col gap-0">
+                <span class="opacity-80">@ UNIVAQ (Software Engineer Group)</span>
+                <span class="">Workflow executor for dmon + wgen + xdriver</span>
+                <div class="flex flex-wrap items-center gap-2 mt-1">
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Rust</span>
+                  <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Redis</span>
+                </div>
               </div>
             </div>
           </div>

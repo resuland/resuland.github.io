@@ -38,7 +38,7 @@ import Document from '../components/Document.astro'
         </div>
       </CvSec>
 
-      <!-- links -->
+      <!-- info -->
       <CvSec className="gap-3">
         <CvSecTitle className="gap-2" title="Info">
           <IoFingerPrintOutline />
@@ -138,6 +138,7 @@ import Document from '../components/Document.astro'
             <div class="cv-item-row">
               <span>University of L'Aquila @ L'Aquila</span>
               <span>Department of Information Engineering, Computer Science and Mathematics</span>
+              <span class="opacity-80">Supervisor - Henry Muccini</span>
               <span>70 / 70 cum laude</span>
             </div>
           </CvSubSecItems>
@@ -174,7 +175,7 @@ import Document from '../components/Document.astro'
           </CvSubSecTitle>
           <CvSubSecItems className="gap-1">
             <div class="cv-item-row gap-1">
-              <span class="font-semibold">Software Engineer Group - University of L'Aquila</span>
+              <span class="font-semibold">Software Engineer Group - University of L'Aquila (UNIVAQ)</span>
               <div class="cv-item-row">
                 <ul class="list-[circle] list-inside">
                   <li>Prof. Henry Muccini - University of L'Aquila</li>
@@ -256,9 +257,8 @@ import Document from '../components/Document.astro'
               <span class="cv-item-tag">Rust</span>
               <span class="cv-item-tag">Go</span>
               <span class="cv-item-tag">Asm x86</span>
-              <span class="cv-item-tag">Asm ARM</span>
-              <span class="cv-item-tag">Asm Risc-V</span>
               <span class="cv-item-tag">Python</span>
+              <span class="cv-item-tag">Lua</span>
             </div>
           </CvSubSecItems>
         </CvSubSec>
@@ -266,7 +266,8 @@ import Document from '../components/Document.astro'
           <CvSubSecTitle title="Medium" />
           <CvSubSecItems className="gap-1">
             <div class="cv-item-col">
-              <span class="cv-item-tag">Lua</span>
+              <span class="cv-item-tag">Asm ARM</span>
+              <span class="cv-item-tag">Asm Risc-V</span>
               <span class="cv-item-tag">Javascript</span>
               <span class="cv-item-tag">Typescript</span>
             </div>
@@ -338,7 +339,7 @@ import Document from '../components/Document.astro'
           <CvSubSecTitle className="font-fira" title="rcp" />
           <CvSubSecItems className="gap-2">
             <div class="cv-item-row">
-              <a class="cv-item-link" href="https://github.com/rootvr/rcp" target="_blank" rel="noopener noreferrer">rootvt/rcp</a>
+              <a class="cv-item-link" href="https://github.com/rootvr/rcp" target="_blank" rel="noopener noreferrer">rootvr/rcp</a>
               <span class="">Configuration compiler for integrating and controlling non-ROS 2 robots within ROS 2 distributed virtual environments</span>
             </div>
             <div class="cv-item-col">
@@ -346,6 +347,19 @@ import Document from '../components/Document.astro'
               <span class="cv-item-tag">Redis</span>
               <span class="cv-item-tag">ROS-2</span>
               <span class="cv-item-tag">Docker</span>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+        <CvSubSec className="gap-2">
+          <CvSubSecTitle className="font-fira" title="dmon-xflow" />
+          <CvSubSecItems className="gap-2">
+            <div class="cv-item-row">
+              <a class="cv-item-link" href="https://github.com/rootvr/dmon-xflow" target="_blank" rel="noopener noreferrer">rootvr/dmon-xflow</a>
+              <span class="">Multithreaded dmon + wgen + xdriver workflow execution driver</span>
+            </div>
+            <div class="cv-item-col">
+              <span class="cv-item-tag">Rust</span>
+              <span class="cv-item-tag">Redis</span>
             </div>
           </CvSubSecItems>
         </CvSubSec>
