@@ -1,11 +1,6 @@
 import React, { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
-import {
-  IoEllipsisVertical,
-  IoLogoGithub,
-  IoLogoGitlab,
-  IoLogoRss,
-} from 'react-icons/io5/index.js'
+import { IoEllipsisVertical, IoLogoGithub, IoLogoGitlab, IoLogoRss } from 'react-icons/io5/index.js'
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')

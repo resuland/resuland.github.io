@@ -6,8 +6,7 @@ export default function ThemeToggle() {
   const [isMounted, setIsMounted] = useState(false)
   const [theme, setTheme] = useState(() => {
     if (import.meta.env.SSR) return undefined
-    if (typeof localStorage !== 'undefined' && localStorage.getItem('theme'))
-      return localStorage.getItem('theme')
+    if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) return localStorage.getItem('theme')
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark'
     return 'light'
   })
@@ -26,11 +25,7 @@ export default function ThemeToggle() {
   }, [])
   return isMounted ? (
     <div className="flex items-center">
-      <button
-        key={theme}
-        className="hover:opacity-80 focus:opacity-50"
-        onClick={toggleTheme}
-      >
+      <button key={theme} className="hover:opacity-80 focus:opacity-50" onClick={toggleTheme}>
         {theme === 'light' ? <IoMoon /> : <IoSunny />}
       </button>
     </div>

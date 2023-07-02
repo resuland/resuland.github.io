@@ -6,7 +6,6 @@ import {
   IoCubeOutline,
   IoEarthOutline,
   IoExtensionPuzzleOutline,
-  IoFingerPrintOutline,
   IoHeadsetOutline,
   IoHeartOutline,
   IoLanguageOutline,
@@ -17,7 +16,7 @@ import {
   IoLogoLinkedin,
   IoSchoolOutline,
   IoShapesOutline,
-  IoTimeOutline,
+  // IoCogOutline,
 } from 'react-icons/io5/index.js'
 import Content from '../components/Content.astro'
 import CvSec from '../components/cv/Sec.astro'
@@ -31,6 +30,7 @@ import Document from '../components/Document.astro'
 <Document>
   <Content className="">
     <CvSec className="gap-4">
+
       <!-- propic -->
       <CvSec className="">
         <div class="place-self-center rounded-full border border-zinc-900 border-spacing-4 dark:border-zinc-300 p-[1px]">
@@ -38,26 +38,12 @@ import Document from '../components/Document.astro'
         </div>
       </CvSec>
 
-      <!-- info -->
-      <CvSec className="gap-3">
-        <CvSecTitle className="gap-2" title="Info">
-          <IoFingerPrintOutline />
-        </CvSecTitle>
-        <CvSubSec className="gap-2">
-          <CvSubSecItems className="gap-1">
-            <div class="cv-item-col">
-              <span>Hi!</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-      </CvSec>
-
       <!-- links -->
-      <CvSec className="gap-3">
+      <CvSec className="gap-2">
         <CvSecTitle className="gap-2" title="Links">
           <IoLinkOutline />
         </CvSecTitle>
-        <CvSubSec className="gap-2">
+        <CvSubSec className="gap-1">
           <CvSubSecItems className="gap-1">
             <div class="cv-item-col">
               <IoLogoGithub />
@@ -84,11 +70,11 @@ import Document from '../components/Document.astro'
       </CvSec>
 
       <!-- languages -->
-      <CvSec className="gap-3">
+      <CvSec className="gap-2">
         <CvSecTitle className="gap-2" title="Languages">
           <IoLanguageOutline />
         </CvSecTitle>
-        <CvSubSec className="gap-2">
+        <CvSubSec className="gap-1">
           <CvSubSecTitle title="English" />
           <CvSubSecItems className="gap-1">
             <div class="cv-item-col">
@@ -116,118 +102,106 @@ import Document from '../components/Document.astro'
       </CvSec>
 
       <!-- education -->
-      <CvSec className="gap-3">
+      <CvSec className="gap-2">
         <CvSecTitle className="gap-2" title="Education">
           <IoSchoolOutline />
         </CvSecTitle>
-        <CvSubSec className="gap-2">
-          <CvSubSecTitle title="LM-18 - Master's Degree in Computer Science" />
+        <CvSubSec className="gap-1">
+          <CvSubSecTitle title="LM-18 &middot; Master's Degree in Computer Science" />
           <CvSubSecItems className="gap-1">
             <div class="cv-item-row">
-              <span>University of L'Aquila @ L'Aquila</span>
-              <span>Department of Information Engineering, Computer Science and Mathematics</span>
+              <span class="opacity-80">University of L'Aquila @ L'Aquila</span>
+              <span class="opacity-80">Department of Information Engineering, Computer Science and Mathematics</span>
               <span class="opacity-80">Models for incremental public transportation service design</span>
-              <span class="opacity-80">Supervisor - Fabrizio Rossi</span>
-              <span>110 / 110 cum laude</span>
+              <span class="opacity-80">Supervisor &middot; Fabrizio Rossi</span>
+              <span class="opacity-80">110 / 110 cum laude</span>
             </div>
           </CvSubSecItems>
         </CvSubSec>
-        <CvSubSec className="gap-2">
-          <CvSubSecTitle title="MU1 - Level-1 Master Course - Mobile and Web Technologies" />
+        <CvSubSec className="gap-1">
+          <CvSubSecTitle title="MU1 &middot; Level-1 Master Course - Mobile and Web Technologies" />
           <CvSubSecItems className="gap-1">
             <div class="cv-item-row">
-              <span>University of L'Aquila @ L'Aquila</span>
-              <span>Department of Information Engineering, Computer Science and Mathematics</span>
-              <span class="opacity-80">Supervisor - Henry Muccini</span>
-              <span>70 / 70 cum laude</span>
+              <span class="opacity-80">University of L'Aquila @ L'Aquila</span>
+              <span class="opacity-80">Department of Information Engineering, Computer Science and Mathematics</span>
+              <span class="opacity-80">Supervisor &middot; Henry Muccini</span>
+              <span class="opacity-80">70 / 70 cum laude</span>
             </div>
           </CvSubSecItems>
         </CvSubSec>
-        <CvSubSec className="gap-2">
-          <CvSubSecTitle title="L-31 - Bachelor's Degree in Computer Science" />
+        <CvSubSec className="gap-1">
+          <CvSubSecTitle title="L-31 &middot; Bachelor's Degree in Computer Science" />
           <CvSubSecItems className="gap-1">
             <div class="cv-item-row">
-              <span>University of L'Aquila @ L'Aquila</span>
-              <span>Department of Information Engineering, Computer Science and Mathematics</span>
+              <span class="opacity-80">University of L'Aquila @ L'Aquila</span>
+              <span class="opacity-80">Department of Information Engineering, Computer Science and Mathematics</span>
               <span class="opacity-80">Computation and performance of Nash equilibria on Generalized Graph K-Coloring game</span>
-              <span class="opacity-80">Supervisor - Gianpiero Monaco</span>
+              <span class="opacity-80">Supervisor &middot; Gianpiero Monaco</span>
             </div>
           </CvSubSecItems>
         </CvSubSec>
-        <CvSubSec className="gap-2">
+        <CvSubSec className="gap-1">
           <CvSubSecTitle title="Classical High School" />
           <CvSubSecItems className="gap-1">
             <div class="cv-item-row">
-              <span>I.I.S. Vittorio Emanuele II @ Lanciano</span>
+              <span class="opacity-80">I.I.S. Vittorio Emanuele II @ Lanciano</span>
             </div>
           </CvSubSecItems>
         </CvSubSec>
       </CvSec>
 
       <!-- work -->
-      <CvSec className="gap-3">
+      <CvSec className="gap-2">
         <CvSecTitle className="gap-2" title="Work">
           <IoExtensionPuzzleOutline />
         </CvSecTitle>
-        <CvSubSec className="gap-2">
-          <CvSubSecTitle className="gap-2" title="Collaborator researcher">
-            <IoTimeOutline />
-          </CvSubSecTitle>
+        <CvSubSec className="gap-1">
+          <CvSubSecTitle className="" title="Fellow Researcher" />
           <CvSubSecItems className="gap-1">
-            <div class="cv-item-row gap-1">
-              <span class="font-semibold">Software Engineer Group - University of L'Aquila (UNIVAQ)</span>
-              <div class="cv-item-row">
-                <ul class="list-[circle] list-inside">
-                  <li>Prof. Henry Muccini - University of L'Aquila</li>
-                  <li>Prof. Mauro Caporuscio - Linnaeus University</li>
-                  <li>Dr. Karthik Vaidhyanathan - University of L'Aquila</li>
-                </ul>
-              </div>
+            <div class="cv-item-row">
+              <span class="opacity-80">Jun 2023 - now</span>
+              <span class="opacity-80">Hybrid @ L'Aquila</span>
+              <span class="opacity-80">Supervisor &middot; Henry Muccini</span>
+              <span class="opacity-80">Group &middot; FrameLab Software Engineering Team</span>
+              <span class="opacity-80">Project &middot; Concurrent monitoring environments for distributed systems</span>
             </div>
           </CvSubSecItems>
         </CvSubSec>
-        <CvSubSec className="gap-2">
-          <CvSubSecTitle className="gap-2" title="Open PhD position">
-            <IoTimeOutline />
-          </CvSubSecTitle>
+        <CvSubSec className="gap-1">
+          <CvSubSecTitle className="" title="Open PhD Position Candidate &middot; winner" />
           <CvSubSecItems className="gap-1">
-            <div class="cv-item-row gap-1">
-              <span class="font-semibold">Dynamic Analysis Group (DAG) - University of Italian Switzerland (USI)</span>
-              <div class="cv-item-row">
-                <ul class="list-[circle] list-inside">
-                  <li>Prof. Walter Binder - University of Italian Switzerland</li>
-                  <li>Dr. Andrea Rosà - University of Italian Switzerland</li>
-                  <li>Dr. Matteo Basso - University of Italian Switzerland</li>
-                </ul>
-              </div>
+            <div class="cv-item-row">
+              <span class="opacity-80">Jul 2022 - Dec 2022</span>
+              <span class="opacity-80">Remote @ Lugano</span>
+              <span class="opacity-80">Supervisor &middot; Walter Binder</span>
+              <span class="opacity-80">Group &middot; Dynamic Analysis Group</span>
+              <span class="opacity-80">Project &middot; Dynamic x86 SIMD instructions profiler for the Hotspot VM using Intel Pin</span>
             </div>
           </CvSubSecItems>
         </CvSubSec>
       </CvSec>
 
       <!-- publications -->
-      <CvSec className="gap-3">
+      <CvSec className="gap-2">
         <CvSecTitle className="gap-2" title="Publications">
           <IoLayersOutline />
         </CvSecTitle>
-        <CvSubSec className="gap-2">
-          <CvSubSecTitle className="gap-2" title="Work in progress (co-author)">
-            <IoTimeOutline />
-          </CvSubSecTitle>
+        <CvSubSec className="gap-1">
+          <CvSubSecTitle className="" title="Benchmark for Rapid QoS Analysis of Microservice-based Software Systems" />
           <CvSubSecItems className="gap-1">
             <div class="cv-item-row">
-              <ul class="list-[circle] list-inside">
-                <li>Prof. Henry Muccini - University of L'Aquila</li>
-                <li>Prof. Mauro Caporuscio - Linnaeus University</li>
-                <li>Dr. Karthik Vaidhyanathan - University of L'Aquila</li>
-              </ul>
+                <span class="opacity-80">Work in progress &middot; Co-Author</span>
+                <span class="opacity-80">Prof. Henry Muccini &middot; University of L'Aquila</span>
+                <span class="opacity-80">Prof. Mauro Caporuscio &middot; Linnaeus University</span>
+                <span class="opacity-80">Prof. Karthik Vaidhyanathan &middot; IIT-Hyderabad</span>
+                <span class="opacity-80">Dr. Riccardo Armando Di Prinzio &middot; University of L'Aquila</span>
             </div>
           </CvSubSecItems>
         </CvSubSec>
       </CvSec>
 
       <!-- interests -->
-      <CvSec className="gap-3">
+      <CvSec className="gap-2">
         <CvSecTitle className="gap-2" title="Interests">
           <IoHeartOutline />
         </CvSecTitle>
@@ -238,13 +212,14 @@ import Document from '../components/Document.astro'
               <span class="cv-item-tag">Compilers</span>
               <span class="cv-item-tag">Operating Systems</span>
               <span class="cv-item-tag">Computer Graphics</span>
+              <span class="cv-item-tag">Distributed Systems</span>
             </div>
           </CvSubSecItems>
         </CvSubSec>
       </CvSec>
 
       <!-- programming -->
-      <CvSec className="gap-3">
+      <CvSec className="gap-2">
         <CvSecTitle className="gap-2" title="Programming">
           <IoCubeOutline />
         </CvSecTitle>
@@ -302,105 +277,128 @@ import Document from '../components/Document.astro'
       </CvSec>
 
       <!-- projects -->
-      <CvSec className="gap-3">
+      <CvSec className="gap-2">
         <CvSecTitle className="gap-2" title="Projects">
           <IoShapesOutline />
         </CvSecTitle>
-        <CvSubSec className="gap-2">
+        <CvSubSec className="gap-1">
+          <CvSubSecTitle className="font-fira" title="dmon" />
+          <CvSubSecItems className="gap-2">
+            <div class="cv-item-row">
+              <a class="cv-item-link" href="https://github.com/v1dmon/dmon" target="_blank" rel="noopener noreferrer">v1dmon/dmon</a>
+              <span class="opacity-80">Concurrent Monitoring System for Docker-powered Microservice-based Applications</span>
+            </div>
+            <div class="cv-item-col">
+              <span class="cv-item-tag">Go</span>
+              <span class="cv-item-tag">Redis</span>
+              <span class="cv-item-tag">Docker</span>
+              <span class="cv-item-tag">Wireshark</span>
+              <span class="cv-item-tag">Monitoring System</span>
+              <span class="cv-item-tag">Microservices</span>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+        <CvSubSec className="gap-1">
+          <CvSubSecTitle className="font-fira" title="wgen" />
+          <CvSubSecItems className="gap-2">
+            <div class="cv-item-row">
+              <a class="cv-item-link" href="https://github.com/v1dmon/wgen" target="_blank" rel="noopener noreferrer">v1dmon/wgen</a>
+              <span class="opacity-80">Agnostic and Concurrent Workload Generator for Microservice-based Applications</span>
+            </div>
+            <div class="cv-item-col">
+              <span class="cv-item-tag">Go</span>
+              <span class="cv-item-tag">Workload Generator</span>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+        <CvSubSec className="gap-1">
+          <CvSubSecTitle className="font-fira" title="flow" />
+          <CvSubSecItems className="gap-2">
+            <div class="cv-item-row">
+              <a class="cv-item-link" href="https://github.com/v1dmon/flow" target="_blank" rel="noopener noreferrer">v1dmon/flow</a>
+              <span class="opacity-80">Workflow-driven Micro-Benchmark Runner using dmon + wgen</span>
+            </div>
+            <div class="cv-item-col">
+              <span class="cv-item-tag">Go</span>
+              <span class="cv-item-tag">Redis</span>
+              <span class="cv-item-tag">dmon</span>
+              <span class="cv-item-tag">wgen</span>
+              <span class="cv-item-tag">Micro-benchmarks</span>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+        <CvSubSec className="gap-1">
           <CvSubSecTitle className="font-fira" title="dxvc" />
           <CvSubSecItems className="gap-2">
             <div class="cv-item-row">
               <a class="cv-item-link" href="https://www.github.com/resu-gh/dxvc" target="_blank" rel="noopener noreferrer">resu-gh/dxvc</a>
-              <span class="">Intel Pin profiler to count the number of SIMD instructions dynamically executed by a target program in a thread-sensitive manner</span>
+              <span class="opacity-80">Intel Pin Profiler to Count the Number of SIMD Instructions Dynamically Executed by a Target Program in a Thread-Sensitive Manner</span>
             </div>
             <div class="cv-item-col">
               <span class="cv-item-tag">C++</span>
               <span class="cv-item-tag">Intel Pin</span>
-              <span class="cv-item-tag">Profiling</span>
-              <span class="cv-item-tag">JVM</span>
-              <span class="cv-item-tag">SIMD</span>
-              <span class="cv-item-tag">x86</span>
+              <span class="cv-item-tag">Profiler</span>
+              <span class="cv-item-tag">Hotspot JVM</span>
+              <span class="cv-item-tag">Asm-x86</span>
+              <span class="cv-item-tag">Asm-x86-SIMD</span>
             </div>
           </CvSubSecItems>
         </CvSubSec>
-        <CvSubSec className="gap-2">
+        <CvSubSec className="gap-1">
           <CvSubSecTitle className="font-fira" title="wyvern" />
           <CvSubSecItems className="gap-2">
             <div class="cv-item-row">
               <a class="cv-item-link" href="https://github.com/resu-gh/wyvern" target="_blank" rel="noopener noreferrer">resu-gh/wyvern</a>
-              <span class="">Thread-safe and re-entrant LALR(1) parser generator</span>
+              <span class="opacity-80">Thread-Safe and Re-Entrant LALR(1) Parser Generator</span>
             </div>
             <div class="cv-item-col">
               <span class="cv-item-tag">C++</span>
+              <span class="cv-item-tag">Parser generator</span>
+              <span class="cv-item-tag">LALR(1)</span>
             </div>
           </CvSubSecItems>
         </CvSubSec>
-        <CvSubSec className="gap-2">
+        <CvSubSec className="gap-1">
+          <CvSubSecTitle className="font-fira" title="xdriver" />
+          <CvSubSecItems className="gap-2">
+            <div class="cv-item-row">
+              <a class="cv-item-link" href="https://github.com/v1dmon/xdriver" target="_blank" rel="noopener noreferrer">v1dmon/xdriver</a>
+              <span class="opacity-80">Concurrent Micro-Benchmark driver using dmon + wgen</span>
+            </div>
+            <div class="cv-item-col">
+              <span class="cv-item-tag">Rust</span>
+              <span class="cv-item-tag">Redis</span>
+              <span class="cv-item-tag">dmon</span>
+              <span class="cv-item-tag">wgen</span>
+              <span class="cv-item-tag">Micro-benchmarks</span>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+        <CvSubSec className="gap-1">
+          <CvSubSecTitle className="font-fira" title="xflow" />
+          <CvSubSecItems className="gap-2">
+            <div class="cv-item-row">
+              <a class="cv-item-link" href="https://github.com/v1dmon/xflow" target="_blank" rel="noopener noreferrer">v1dmon/xflow</a>
+              <span class="opacity-80">Workflow-driven Micro-Benchmark runner using dmon + wgen + xdriver</span>
+            </div>
+            <div class="cv-item-col">
+              <span class="cv-item-tag">Rust</span>
+              <span class="cv-item-tag">xdriver</span>
+              <span class="cv-item-tag">Micro-benchmarks</span>
+            </div>
+          </CvSubSecItems>
+        </CvSubSec>
+        <CvSubSec className="gap-1">
           <CvSubSecTitle className="font-fira" title="rcp" />
           <CvSubSecItems className="gap-2">
             <div class="cv-item-row">
               <a class="cv-item-link" href="https://github.com/rootvr/rcp" target="_blank" rel="noopener noreferrer">rootvr/rcp</a>
-              <span class="">Configuration compiler for integrating and controlling non-ROS 2 robots within ROS 2 distributed virtual environments</span>
+              <span class="opacity-80">Configuration Compiler for Integrating and Controlling non-ROS-2 Robots within ROS-2 Distributed Virtual Environments</span>
             </div>
             <div class="cv-item-col">
               <span class="cv-item-tag">Python</span>
               <span class="cv-item-tag">Redis</span>
               <span class="cv-item-tag">ROS-2</span>
-              <span class="cv-item-tag">Docker</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-        <CvSubSec className="gap-2">
-          <CvSubSecTitle className="font-fira" title="dmon-xflow" />
-          <CvSubSecItems className="gap-2">
-            <div class="cv-item-row">
-              <a class="cv-item-link" href="https://github.com/rootvr/dmon-xflow" target="_blank" rel="noopener noreferrer">rootvr/dmon-xflow</a>
-              <span class="">Multithreaded dmon + wgen + xdriver workflow execution driver</span>
-            </div>
-            <div class="cv-item-col">
-              <span class="cv-item-tag">Rust</span>
-              <span class="cv-item-tag">Redis</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-        <CvSubSec className="gap-2">
-          <CvSubSecTitle className="font-fira" title="dmon-xdriver" />
-          <CvSubSecItems className="gap-2">
-            <div class="cv-item-row">
-              <a class="cv-item-link" href="https://github.com/rootvr/dmon-xdriver" target="_blank" rel="noopener noreferrer">rootvr/dmon-xdriver</a>
-              <span class="">Multithreaded dmon + wgen experiments execution driver</span>
-            </div>
-            <div class="cv-item-col">
-              <span class="cv-item-tag">Rust</span>
-              <span class="cv-item-tag">Redis</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-        <CvSubSec className="gap-2">
-          <CvSubSecTitle className="font-fira" title="dmon" />
-          <CvSubSecItems className="gap-2">
-            <div class="cv-item-row">
-              <a class="cv-item-link" href="https://github.com/rootvr/dmon" target="_blank" rel="noopener noreferrer">rootvr/dmon</a>
-              <span class="">Multithreaded monitoring system for monolithic or microservice-based Docker-powered applications</span>
-            </div>
-            <div class="cv-item-col">
-              <span class="cv-item-tag">Go</span>
-              <span class="cv-item-tag">Redis</span>
-              <span class="cv-item-tag">Docker</span>
-              <span class="cv-item-tag">Kubernetes</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-        <CvSubSec className="gap-2">
-          <CvSubSecTitle className="font-fira" title="wgen" />
-          <CvSubSecItems className="gap-2">
-            <div class="cv-item-row">
-              <a class="cv-item-link" href="https://github.com/rootvr/wgen" target="_blank" rel="noopener noreferrer">rootvr/wgen</a>
-              <span class="">Multithreaded workload generator for monolithic or microservice-based Docker-powered applications</span>
-            </div>
-            <div class="cv-item-col">
-              <span class="cv-item-tag">Go</span>
-              <span class="cv-item-tag">Redis</span>
               <span class="cv-item-tag">Docker</span>
             </div>
           </CvSubSecItems>
