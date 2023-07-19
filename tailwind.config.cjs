@@ -7,6 +7,8 @@ module.exports = {
       'fira': ['"Fira Code"'],
       'nunito': ['"Nunito"'],
       'opensans': ['"Open Sans"'],
+      'dmsans': ['"DM Sans"'],
+      'dmmono': ['"DM Mono"'],
     },
     extend: {},
   },

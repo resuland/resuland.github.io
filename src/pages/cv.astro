@@ -1,29 +1,4 @@
 ---
-import {
-  IoAt,
-  IoBookOutline,
-  IoCalendarClearOutline,
-  IoCallOutline,
-  IoChatbubbleOutline,
-  IoCubeOutline,
-  IoEarthOutline,
-  IoExtensionPuzzleOutline,
-  IoHeadsetOutline,
-  IoHeartOutline,
-  IoLanguageOutline,
-  IoLayersOutline,
-  IoLinkOutline,
-  IoLogoGithub,
-  IoLogoGitlab,
-  IoLogoLinkedin,
-  IoMailOutline,
-  IoMapOutline,
-  IoPrintOutline,
-  IoReaderOutline,
-  IoSchoolOutline,
-  IoShapesOutline,
-  IoTimeOutline,
-} from 'react-icons/io5/index.js'
 import BaseHead from '../components/BaseHead.astro'
 
 import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
@@ -51,7 +26,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
         <div class="flex flex-col space-y-4 sm:space-y-0 sm:place-content-between sm:flex-row print:space-y-0 print:place-content-between print:flex-row">
           <div class="flex flex-col space-y-4 sm:space-y-0 sm:place-items-stretch sm:space-x-6 sm:flex-row print:space-y-0 print:place-items-stretch print:space-x-6 print:flex-row">
             <div class="place-self-start sm:place-self-stretch print:place-self-stretch">
-              <img src="/propic.cut.jpg" alt="void" class="object-cover w-[90px] rounded-full" />
+              <img src="/propic.jpg" alt="void" class="object-cover w-[90px] rounded-full" />
             </div>
             <div class="flex flex-col place-items-start sm:place-content-center sm:place-items-start print:place-content-center print:place-items-start">
               <span class="text-2xl text-orange-500">Valentino Di Giosaffatte</span>
@@ -60,14 +35,14 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
           </div>
           <div class="flex flex-col place-items-start sm:place-content-center sm:place-items-end print:place-content-center print:place-items-end">
             <div class="flex space-x-2 place-items-center">
-              <IoCalendarClearOutline className="text-orange-500 visible sm:invisible print:invisible" />
+              <div class="i-ion-calendar-clear-outline text-orange-500 visible sm:invisible print:invisible" />
               <span class="">11 January 1994</span>
-              <IoCalendarClearOutline className="text-orange-500 invisible sm:visible print:visible" />
+              <div class="i-ion-calendar-clear-outline text-orange-500 invisible sm:visible print:visible" />
             </div>
             <div class="flex space-x-2 place-items-center text-right">
-              <IoMapOutline className="text-orange-500 visible sm:invisible print:invisible" />
+              <div class="i-ion-map-outline text-orange-500 visible sm:invisible print:invisible" />
               <span class="">Lanciano, Chieti, Abruzzo, Italy</span>
-              <IoMapOutline className="text-orange-500 invisible sm:visible print:visible" />
+              <div class="i-ion-map-outline text-orange-500 invisible sm:visible print:visible" />
             </div>
           </div>
         </div>
@@ -78,43 +53,43 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
           <!-- body - contacts -->
           <div class="flex flex-col gap-2">
             <div class="flex flex-wrap items-center text-orange-500 text-xl gap-2">
-              <IoAt />
+              <div class="i-ion-at" />
               <span>Contacts</span>
             </div>
             <div class="flex flex-col ml-7 gap-1">
               <div class="flex flex-wrap items-center gap-2">
-                <IoMailOutline />
+                <div class="i-ion-mail-outline" />
                 <span>Email</span>
-                <a class="text-blue-500 font-fira text-sm" href="mailto:valentino.digiosaffatte@student.univaq.it">valentino.digiosaffatte@student.univaq.it</a>
+                <a class="text-blue-500 font-fira text-sm" href="mailto:9valentino4@gmail.com">9valentino4@gmail.com</a>
               </div>
             </div>
           </div>
           <!-- body - links -->
           <div class="flex flex-col gap-2">
             <div class="flex flex-wrap items-center text-orange-500 text-xl gap-2">
-              <IoLinkOutline />
+              <div class="i-ion-link-outline" />
               <span>Links</span>
             </div>
             <div class="flex flex-col ml-7 gap-1">
               <div class="flex flex-wrap items-center gap-2">
-                <IoLogoGithub />
+                <div class="i-ion-logo-github" />
                 <span>Github</span>
                 <a class="text-blue-500 font-fira text-sm" href="https://www.github.com/resu-gh" target="_blank" rel="noopener noreferrer">github.com/resu-gh</a>
               </div>
               <div class="flex flex-wrap items-center gap-2">
-                <IoLogoGitlab />
+                <div class="i-ion-logo-gitlab" />
                 <span>Gitlab</span>
                 <a class="text-blue-500 font-fira text-sm" href="https://www.gitlab.com/resu-gl" target="_blank" rel="noopener noreferrer">gitlab.com/resu-gl</a>
               </div>
               <div class="flex flex-wrap items-center gap-2">
-                <IoLogoLinkedin />
+                <div class="i-ion-logo-linkedin" />
                 <span>LinkedIn</span>
                 <a class="text-blue-500 font-fira text-sm" href="https://www.linkedin.com/in/valentino-di-giosaffatte-527a61243" target="_blank" rel="noopener noreferrer">
                   linkedin.com/in/valentino-di-giosaffatte-527a61243
                 </a>
               </div>
               <div class="flex flex-wrap items-center gap-2">
-                <IoEarthOutline />
+                <div class="i-ion-earth-outline" />
                 <span>Website</span>
                 <a class="text-blue-500 font-fira text-sm" href="https://resuland.github.io" target="_blank" rel="noopener noreferrer">resuland.github.io</a>
               </div>
@@ -123,7 +98,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
           <!-- body - languages -->
           <div class="flex flex-col gap-2">
             <div class="flex flex-wrap items-center text-orange-500 text-xl gap-2">
-              <IoLanguageOutline />
+                <div class="i-ion-language-outline" />
               <span>Languages</span>
             </div>
             <div class="flex flex-col ml-7 gap-1">
@@ -132,22 +107,22 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
               </div>
               <div class="flex flex-col gap-1">
                 <div class="flex flex-wrap items-center gap-2">
-                  <IoHeadsetOutline />
+                  <div class="i-ion-headset-outline" />
                   <span>Listening</span>
                   <span>C1</span>
                 </div>
                 <div class="flex flex-wrap items-center gap-2">
-                  <IoChatbubbleOutline />
+                  <div class="i-ion-chatbubble-outline" />
                   <span>Speaking</span>
                   <span>C1</span>
                 </div>
                 <div class="flex flex-wrap items-center gap-2">
-                  <IoBookOutline />
+                  <div class="i-ion-book-outline" />
                   <span>Reading</span>
                   <span>C1</span>
                 </div>
                 <div class="flex flex-wrap items-center gap-2">
-                  <IoReaderOutline />
+                  <div class="i-ion-reader-outline" />
                   <span>Writing</span>
                   <span>C1</span>
                 </div>
@@ -157,7 +132,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
           <!-- body - educations -->
           <div class="flex flex-col gap-2">
             <div class="flex flex-wrap items-center text-orange-500 text-xl gap-2">
-              <IoSchoolOutline />
+              <div class="i-ion-school-outline" />
               <span>Education</span>
             </div>
             <div class="flex flex-col ml-7 gap-1">
@@ -223,12 +198,25 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
           <!-- body - work -->
           <div class="flex flex-col gap-2">
             <div class="flex flex-wrap items-center text-orange-500 text-xl gap-2">
-              <IoExtensionPuzzleOutline />
+              <div class="i-ion-extension-puzzle-outline" />
               <span>Work</span>
             </div>
             <div class="flex flex-col ml-7 gap-1">
               <div class="flex flex-wrap items-center font-semibold text-lg gap-2">
-                <IoTimeOutline />
+              <div class="i-ion-time-outline" />
+                <span>Researcher w/ scholarship</span>
+              </div>
+              <div class="flex flex-col gap-1">
+                <span class="font-semibold">Software Engineer Group - University of L'Aquila (UNIVAQ)</span>
+                <div class="flex flex-wrap flex-col gap-1">
+                  <ul class="list-[circle] list-inside">
+                    <li>Prof. Henry Muccini - University of L'Aquila</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col ml-7 gap-1">
+              <div class="flex flex-wrap items-center font-semibold text-lg gap-2">
                 <span>Collaborator researcher</span>
               </div>
               <div class="flex flex-col gap-1">
@@ -262,12 +250,12 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
         <!-- body - publications -->
         <div class="flex flex-col gap-2">
           <div class="flex flex-wrap items-center text-orange-500 text-xl gap-2">
-            <IoLayersOutline />
+            <div class="i-ion-layers-outline" />
             <span>Publications</span>
           </div>
           <div class="flex flex-col ml-7 gap-1">
             <div class="flex flex-wrap items-center font-semibold text-lg gap-2">
-              <IoTimeOutline />
+              <div class="i-ion-time-outline" />
               <span>Conference or Journal - Co-author</span>
             </div>
             <div class="flex flex-col gap-1">
@@ -284,7 +272,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
         <!-- body - interests -->
         <div class="flex flex-col gap-2">
           <div class="flex flex-wrap items-center text-orange-500 text-xl gap-2">
-            <IoHeartOutline />
+            <div class="i-ion-heart-outline" />
             <span>Interests</span>
           </div>
           <div class="flex flex-col ml-7 gap-1">
@@ -299,7 +287,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
         <!-- body - programming -->
         <div class="flex flex-col gap-2">
           <div class="flex flex-wrap items-center text-orange-500 text-xl gap-2">
-            <IoCubeOutline />
+            <div class="i-ion-cube-outline" />
             <span>Programming</span>
           </div>
           <div class="flex flex-col ml-7 gap-2">
@@ -379,7 +367,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
           <!-- body - projects -->
           <div class="flex flex-col gap-2">
             <div class="flex flex-wrap items-center text-orange-500 text-xl gap-2">
-              <IoShapesOutline />
+              <div class="i-ion-shapes-outline" />
               <span>Projects</span>
             </div>
             <div class="flex flex-col ml-7 gap-0">
@@ -465,7 +453,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
               </div>
               <div class="flex flex-col gap-0">
                 <span class="opacity-80">@ UNIVAQ (Software Engineer Group)</span>
-                <span class="">Test executor for dmon + wgen</span>
+                <span class="">Single benchmark executor for dmon + wgen</span>
                 <div class="flex flex-wrap items-center gap-2 mt-1">
                   <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Rust</span>
                   <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Redis</span>
@@ -478,7 +466,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
               </div>
               <div class="flex flex-col gap-0">
                 <span class="opacity-80">@ UNIVAQ (Software Engineer Group)</span>
-                <span class="">Workflow executor for dmon + wgen + xdriver</span>
+                <span class="">Workflow-driven multiple benchmark executor for dmon + wgen + xdriver</span>
                 <div class="flex flex-wrap items-center gap-2 mt-1">
                   <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Rust</span>
                   <span class="px-1 bg-zinc-200 rounded-sm font-fira text-sm">Redis</span>
@@ -490,7 +478,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
       </article>
     </main>
     <button class="bg-zinc-900 text-white rounded-md fixed top-[50%] right-10 p-3 text-xl print:hidden hover:opacity-80 focus:opacity-50" onclick="window.print()">
-      <IoPrintOutline />
+      <div class="i-ion-print-outline"></div>
     </button>
   </body>
 </html>

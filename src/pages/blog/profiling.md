@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/BlogPost.astro'
+layout: '../../layouts/Blog.astro'
 title: 'Accurate Profiling in the Presence of Dynamic Compilation'
 description: 'Paper analysis'
 pubDate: 'Dec 24 2022'

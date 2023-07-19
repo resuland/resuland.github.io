@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/BlogPost.astro'
+layout: '../../layouts/Blog.astro'
 title: 'Fast Static Analysis of C++ Virtual Function Calls'
 description: 'Paper analysis'
 pubDate: 'Dec 24 2022'

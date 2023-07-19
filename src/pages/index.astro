@@ -1,439 +1,236 @@
 ---
-import {
-  IoAt,
-  IoBookOutline,
-  IoChatbubbleEllipsesOutline,
-  IoCubeOutline,
-  IoEarthOutline,
-  IoExtensionPuzzleOutline,
-  IoHeadsetOutline,
-  IoHeartOutline,
-  IoLanguageOutline,
-  IoLayersOutline,
-  IoLinkOutline,
-  IoLogoGithub,
-  IoLogoGitlab,
-  IoLogoLinkedin,
-  IoSchoolOutline,
-  IoShapesOutline,
-  // IoCogOutline,
-} from 'react-icons/io5/index.js'
+import cv from '../components/Cv.json'
 import Content from '../components/Content.astro'
 import CvSec from '../components/cv/Sec.astro'
 import CvSecTitle from '../components/cv/SecTitle.astro'
 import CvSubSec from '../components/cv/SubSec.astro'
 import CvSubSecItems from '../components/cv/SubSecItems.astro'
 import CvSubSecTitle from '../components/cv/SubSecTitle.astro'
-import Document from '../components/Document.astro'
+import Document from '../layouts/Document.astro'
 ---
 
 <Document>
   <Content className="">
     <CvSec className="gap-4">
-
       <!-- propic -->
       <CvSec className="">
         <div class="place-self-center rounded-full border border-zinc-900 border-spacing-4 dark:border-zinc-300 p-[1px]">
-          <img src="/propic.cut.jpg" alt="void" class="object-cover w-[100px] rounded-full" />
+          <img src="/propic.jpg" alt="void" class="object-cover w-[100px] rounded-full" />
         </div>
       </CvSec>
 
-      <!-- links -->
       <CvSec className="gap-2">
-        <CvSecTitle className="gap-2" title="Links">
-          <IoLinkOutline />
-        </CvSecTitle>
-        <CvSubSec className="gap-1">
-          <CvSubSecItems className="gap-1">
-            <div class="cv-item-col">
-              <IoLogoGithub />
-              <span>Github</span>
-              <a class="cv-item-link" href="http://www.github.com/resu-gh" target="_blank" rel="noopener noreferrer">resu-gh</a>
-            </div>
-            <div class="cv-item-col">
-              <IoLogoGitlab />
-              <span>Gitlab</span>
-              <a class="cv-item-link" href="http://www.gitlab.com/resu-gl" target="_blank" rel="noopener noreferrer">resu-gl</a>
-            </div>
-            <div class="cv-item-col">
-              <IoLogoLinkedin />
-              <span>LinkedIn</span>
-              <a class="cv-item-link" href="http://www.linkedin.com/in/valentino-di-giosaffatte-527a61243" target="_blank" rel="noopener noreferrer"> valentino-di-giosaffatte</a>
-            </div>
-            <div class="cv-item-col">
-              <IoEarthOutline />
-              <span>Website</span>
-              <a class="cv-item-link" href="https://resuland.github.io" target="_blank" rel="noopener noreferrer">resuland.github.io</a>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-      </CvSec>
+        <!-- links -->
+        <CvSec className="gap-2">
+          <CvSecTitle className="gap-2" title={cv.Links.k}>
+            <div class="i-ion-link-outline"></div>
+          </CvSecTitle>
+          <CvSubSec className="gap-1">
+            <CvSubSecItems className="gap-1">
+              <div class="cv-item-col">
+                <div class="i-ion-logo-github"></div>
+                <span>{cv.Links.Github.k}</span>
+                <a class="cv-item-link" href={cv.Links.Github.href} target="_blank" rel="noopener noreferrer">{cv.Links.Github.aname}</a>
+              </div>
+              <div class="cv-item-col">
+                <div class="i-ion-logo-gitlab"></div>
+                <span>{cv.Links.Gitlab.k}</span>
+                <a class="cv-item-link" href={cv.Links.Gitlab.href} target="_blank" rel="noopener noreferrer">{cv.Links.Gitlab.aname}</a>
+              </div>
+              <div class="cv-item-col">
+                <div class="i-ion-logo-linkedin"></div>
+                <span>{cv.Links.Linkedin.k}</span>
+                <a class="cv-item-link" href={cv.Links.Linkedin.href} target="_blank" rel="noopener noreferrer">{cv.Links.Linkedin.aname}</a>
+              </div>
+              <div class="cv-item-col">
+                <div class="i-ion-earth-outline"></div>
+                <span>{cv.Links.Website.k}</span>
+                <a class="cv-item-link" href={cv.Links.Website.href} target="_blank" rel="noopener noreferrer">{cv.Links.Website.aname}</a>
+              </div>
+            </CvSubSecItems>
+          </CvSubSec>
+        </CvSec>
 
-      <!-- languages -->
-      <CvSec className="gap-2">
-        <CvSecTitle className="gap-2" title="Languages">
-          <IoLanguageOutline />
-        </CvSecTitle>
-        <CvSubSec className="gap-1">
-          <CvSubSecTitle title="English" />
-          <CvSubSecItems className="gap-1">
-            <div class="cv-item-col">
-              <IoHeadsetOutline />
-              <span>Listening</span>
-              <span>C1</span>
-            </div>
-            <div class="cv-item-col">
-              <IoChatbubbleEllipsesOutline />
-              <span>Speaking</span>
-              <span>C1</span>
-            </div>
-            <div class="cv-item-col">
-              <IoBookOutline />
-              <span>Reading</span>
-              <span>C1</span>
-            </div>
-            <div class="cv-item-col">
-              <IoAt />
-              <span>Writing</span>
-              <span>C1</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-      </CvSec>
+        <!-- languages -->
+        <CvSec className="gap-2">
+          <CvSecTitle className="gap-2" title={cv.Languages.k}>
+            <div class="i-ion-language-outline"></div>
+          </CvSecTitle>
+          <CvSubSec className="gap-1">
+            <CvSubSecTitle title="English" />
+            <CvSubSecItems className="gap-1">
+              <div class="cv-item-col">
+                <div class="i-ion-headset-outline"></div>
+                <span>{cv.Languages.English.listening.k}</span>
+                <span>{cv.Languages.English.listening.level}</span>
+              </div>
+              <div class="cv-item-col">
+                <div class="i-ion-chatbubble-ellipses-outline"></div>
+                <span>{cv.Languages.English.speaking.k}</span>
+                <span>{cv.Languages.English.speaking.level}</span>
+              </div>
+              <div class="cv-item-col">
+                <div class="i-ion-book-outline"></div>
+                <span>{cv.Languages.English.reading.k}</span>
+                <span>{cv.Languages.English.reading.level}</span>
+              </div>
+              <div class="cv-item-col">
+                <div class="i-ion-at-outline"></div>
+                <span>{cv.Languages.English.writing.k}</span>
+                <span>{cv.Languages.English.writing.level}</span>
+              </div>
+            </CvSubSecItems>
+          </CvSubSec>
+        </CvSec>
 
-      <!-- education -->
-      <CvSec className="gap-2">
-        <CvSecTitle className="gap-2" title="Education">
-          <IoSchoolOutline />
-        </CvSecTitle>
-        <CvSubSec className="gap-1">
-          <CvSubSecTitle title="LM-18 &middot; Master's Degree in Computer Science" />
-          <CvSubSecItems className="gap-1">
-            <div class="cv-item-row">
-              <span class="opacity-80">University of L'Aquila @ L'Aquila</span>
-              <span class="opacity-80">Department of Information Engineering, Computer Science and Mathematics</span>
-              <span class="opacity-80">Models for incremental public transportation service design</span>
-              <span class="opacity-80">Supervisor &middot; Fabrizio Rossi</span>
-              <span class="opacity-80">110 / 110 cum laude</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-        <CvSubSec className="gap-1">
-          <CvSubSecTitle title="MU1 &middot; Level-1 Master Course - Mobile and Web Technologies" />
-          <CvSubSecItems className="gap-1">
-            <div class="cv-item-row">
-              <span class="opacity-80">University of L'Aquila @ L'Aquila</span>
-              <span class="opacity-80">Department of Information Engineering, Computer Science and Mathematics</span>
-              <span class="opacity-80">Supervisor &middot; Henry Muccini</span>
-              <span class="opacity-80">70 / 70 cum laude</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-        <CvSubSec className="gap-1">
-          <CvSubSecTitle title="L-31 &middot; Bachelor's Degree in Computer Science" />
-          <CvSubSecItems className="gap-1">
-            <div class="cv-item-row">
-              <span class="opacity-80">University of L'Aquila @ L'Aquila</span>
-              <span class="opacity-80">Department of Information Engineering, Computer Science and Mathematics</span>
-              <span class="opacity-80">Computation and performance of Nash equilibria on Generalized Graph K-Coloring game</span>
-              <span class="opacity-80">Supervisor &middot; Gianpiero Monaco</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-        <CvSubSec className="gap-1">
-          <CvSubSecTitle title="Classical High School" />
-          <CvSubSecItems className="gap-1">
-            <div class="cv-item-row">
-              <span class="opacity-80">I.I.S. Vittorio Emanuele II @ Lanciano</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-      </CvSec>
+        <!-- education -->
+        <CvSec className="gap-2">
+          <CvSecTitle className="gap-2" title={cv.Education.k}>
+            <div class="i-ion-school-outline"></div>
+          </CvSecTitle>
+          {
+            cv.Education.v.map(e => (
+              <CvSubSec className="gap-1">
+                <CvSubSecTitle title={e.k} />
+                <CvSubSecItems className="gap-1">
+                  <div class="cv-item-row">
+                    {e.v.map(i => (
+                      <span class="opacity-80">{i}</span>
+                    ))}
+                  </div>
+                </CvSubSecItems>
+              </CvSubSec>
+            ))
+          }
+        </CvSec>
 
-      <!-- work -->
-      <CvSec className="gap-2">
-        <CvSecTitle className="gap-2" title="Work">
-          <IoExtensionPuzzleOutline />
-        </CvSecTitle>
-        <CvSubSec className="gap-1">
-          <CvSubSecTitle className="" title="Fellow Researcher" />
-          <CvSubSecItems className="gap-1">
-            <div class="cv-item-row">
-              <span class="opacity-80">Jun 2023 - now</span>
-              <span class="opacity-80">Hybrid @ L'Aquila</span>
-              <span class="opacity-80">Supervisor &middot; Henry Muccini</span>
-              <span class="opacity-80">Group &middot; FrameLab Software Engineering Team</span>
-              <span class="opacity-80">Project &middot; Concurrent monitoring environments for distributed systems</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-        <CvSubSec className="gap-1">
-          <CvSubSecTitle className="" title="Open PhD Position Candidate &middot; winner" />
-          <CvSubSecItems className="gap-1">
-            <div class="cv-item-row">
-              <span class="opacity-80">Jul 2022 - Dec 2022</span>
-              <span class="opacity-80">Remote @ Lugano</span>
-              <span class="opacity-80">Supervisor &middot; Walter Binder</span>
-              <span class="opacity-80">Group &middot; Dynamic Analysis Group</span>
-              <span class="opacity-80">Project &middot; Dynamic x86 SIMD instructions profiler for the Hotspot VM using Intel Pin</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-      </CvSec>
+        <!-- work -->
+        <CvSec className="gap-2">
+          <CvSecTitle className="gap-2" title={cv.Work.k}>
+            <div class="i-ion-extension-puzzle-outline"></div>
+          </CvSecTitle>
+          {
+            cv.Work.v.map(e => (
+              <CvSubSec className="gap-1">
+                <CvSubSecTitle className="" title={e.k} />
+                <CvSubSecItems className="gap-1">
+                  <div class="cv-item-row">
+                    {e.v.map(i => (
+                      <span class="opacity-80">{i}</span>
+                    ))}
+                  </div>
+                </CvSubSecItems>
+              </CvSubSec>
+            ))
+          }
+        </CvSec>
 
-      <!-- publications -->
-      <CvSec className="gap-2">
-        <CvSecTitle className="gap-2" title="Publications">
-          <IoLayersOutline />
-        </CvSecTitle>
-        <CvSubSec className="gap-1">
-          <CvSubSecTitle className="" title="Benchmark for Rapid QoS Analysis of Microservice-based Software Systems" />
-          <CvSubSecItems className="gap-1">
-            <div class="cv-item-row">
-                <span class="opacity-80">Work in progress &middot; Co-Author</span>
-                <span class="opacity-80">Prof. Henry Muccini &middot; University of L'Aquila</span>
-                <span class="opacity-80">Prof. Mauro Caporuscio &middot; Linnaeus University</span>
-                <span class="opacity-80">Prof. Karthik Vaidhyanathan &middot; IIT-Hyderabad</span>
-                <span class="opacity-80">Dr. Riccardo Armando Di Prinzio &middot; University of L'Aquila</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-      </CvSec>
+        <!-- publications -->
+        <CvSec className="gap-2">
+          <CvSecTitle className="gap-2" title={cv.Publications.k}>
+            <div class="i-ion-layers-outline"></div>
+          </CvSecTitle>
+          {
+            cv.Publications.v.map(e => (
+              <CvSubSec className="gap-1">
+                <CvSubSecTitle className="" title={e.k} />
+                <CvSubSecItems className="gap-1">
+                  <div class="cv-item-row">
+                    {e.v.map(i => (
+                      <span class="opacity-80">{i}</span>
+                    ))}
+                  </div>
+                </CvSubSecItems>
+              </CvSubSec>
+            ))
+          }
+        </CvSec>
 
-      <!-- interests -->
-      <CvSec className="gap-2">
-        <CvSecTitle className="gap-2" title="Interests">
-          <IoHeartOutline />
-        </CvSecTitle>
-        <CvSubSec className="gap-2">
-          <CvSubSecItems className="gap-1">
-            <div class="cv-item-col">
-              <span class="cv-item-tag">Programming Languages</span>
-              <span class="cv-item-tag">Compilers</span>
-              <span class="cv-item-tag">Operating Systems</span>
-              <span class="cv-item-tag">Computer Graphics</span>
-              <span class="cv-item-tag">Distributed Systems</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-      </CvSec>
+        <!-- interests -->
+        <CvSec className="gap-2">
+          <CvSecTitle className="gap-2" title={cv.Interests.k}>
+            <div class="i-ion-heart-outline"></div>
+          </CvSecTitle>
+          <CvSubSec className="gap-2">
+            <CvSubSecItems className="gap-1">
+              <div class="cv-item-col">
+                {cv.Interests.v.map(e => <span class="cv-item-tag">{e}</span>)}
+              </div>
+            </CvSubSecItems>
+          </CvSubSec>
+        </CvSec>
 
-      <!-- programming -->
-      <CvSec className="gap-2">
-        <CvSecTitle className="gap-2" title="Programming">
-          <IoCubeOutline />
-        </CvSecTitle>
-        <CvSubSec className="gap-2">
-          <CvSubSecTitle title="High" />
-          <CvSubSecItems className="gap-1">
-            <div class="cv-item-col">
-              <span class="cv-item-tag">C</span>
-              <span class="cv-item-tag">C++</span>
-              <span class="cv-item-tag">Rust</span>
-              <span class="cv-item-tag">Go</span>
-              <span class="cv-item-tag">Asm x86</span>
-              <span class="cv-item-tag">Python</span>
-              <span class="cv-item-tag">Lua</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-        <CvSubSec className="gap-2">
-          <CvSubSecTitle title="Medium" />
-          <CvSubSecItems className="gap-1">
-            <div class="cv-item-col">
-              <span class="cv-item-tag">Asm ARM</span>
-              <span class="cv-item-tag">Asm Risc-V</span>
-              <span class="cv-item-tag">Javascript</span>
-              <span class="cv-item-tag">Typescript</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-        <CvSubSec className="gap-2">
-          <CvSubSecTitle title="Low / Learning" />
-          <CvSubSecItems className="gap-1">
-            <div class="cv-item-col">
-              <span class="cv-item-tag">Zig</span>
-              <span class="cv-item-tag">V</span>
-              <span class="cv-item-tag">Dart</span>
-              <span class="cv-item-tag">Apl</span>
-              <span class="cv-item-tag">Haskell</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-        <CvSubSec className="gap-2">
-          <CvSubSecTitle title="Used" />
-          <CvSubSecItems className="gap-1">
-            <div class="cv-item-col">
-              <span class="cv-item-tag">Prolog</span>
-              <span class="cv-item-tag">Lisp</span>
-              <span class="cv-item-tag">ML</span>
-              <span class="cv-item-tag">C#</span>
-              <span class="cv-item-tag">Php</span>
-              <span class="cv-item-tag">Java</span>
-              <span class="cv-item-tag">Ruby</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-      </CvSec>
+        <!-- programming -->
+        <CvSec className="gap-2">
+          <CvSecTitle className="gap-2" title={cv.Programming.k}>
+            <div class="i-ion-cube-outline"></div>
+          </CvSecTitle>
+          <CvSubSec className="gap-2">
+            <CvSubSecItems className="gap-1">
+              <div class="cv-item-col">
+                {cv.Programming.v.map(e => <span class="cv-item-tag">{e}</span>)}
+              </div>
+            </CvSubSecItems>
+          </CvSubSec>
+        </CvSec>
 
-      <!-- projects -->
-      <CvSec className="gap-2">
-        <CvSecTitle className="gap-2" title="Projects">
-          <IoShapesOutline />
-        </CvSecTitle>
-        <CvSubSec className="gap-1">
-          <CvSubSecTitle className="font-fira" title="dmon" />
-          <CvSubSecItems className="gap-2">
-            <div class="cv-item-row">
-              <a class="cv-item-link" href="https://github.com/v1dmon/dmon" target="_blank" rel="noopener noreferrer">v1dmon/dmon</a>
-              <span class="opacity-80">Concurrent Monitoring System for Docker-powered Microservice-based Applications</span>
-            </div>
-            <div class="cv-item-col">
-              <span class="cv-item-tag">Go</span>
-              <span class="cv-item-tag">Redis</span>
-              <span class="cv-item-tag">Docker</span>
-              <span class="cv-item-tag">Wireshark</span>
-              <span class="cv-item-tag">Monitoring System</span>
-              <span class="cv-item-tag">Microservices</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-        <CvSubSec className="gap-1">
-          <CvSubSecTitle className="font-fira" title="wgen" />
-          <CvSubSecItems className="gap-2">
-            <div class="cv-item-row">
-              <a class="cv-item-link" href="https://github.com/v1dmon/wgen" target="_blank" rel="noopener noreferrer">v1dmon/wgen</a>
-              <span class="opacity-80">Agnostic and Concurrent Workload Generator for Microservice-based Applications</span>
-            </div>
-            <div class="cv-item-col">
-              <span class="cv-item-tag">Go</span>
-              <span class="cv-item-tag">Workload Generator</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-        <CvSubSec className="gap-1">
-          <CvSubSecTitle className="font-fira" title="flow" />
-          <CvSubSecItems className="gap-2">
-            <div class="cv-item-row">
-              <a class="cv-item-link" href="https://github.com/v1dmon/flow" target="_blank" rel="noopener noreferrer">v1dmon/flow</a>
-              <span class="opacity-80">Workflow-driven Micro-Benchmark Runner using dmon + wgen</span>
-            </div>
-            <div class="cv-item-col">
-              <span class="cv-item-tag">Go</span>
-              <span class="cv-item-tag">Redis</span>
-              <span class="cv-item-tag">dmon</span>
-              <span class="cv-item-tag">wgen</span>
-              <span class="cv-item-tag">Micro-benchmarks</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-        <CvSubSec className="gap-1">
-          <CvSubSecTitle className="font-fira" title="dxvc" />
-          <CvSubSecItems className="gap-2">
-            <div class="cv-item-row">
-              <a class="cv-item-link" href="https://www.github.com/resu-gh/dxvc" target="_blank" rel="noopener noreferrer">resu-gh/dxvc</a>
-              <span class="opacity-80">Intel Pin Profiler to Count the Number of SIMD Instructions Dynamically Executed by a Target Program in a Thread-Sensitive Manner</span>
-            </div>
-            <div class="cv-item-col">
-              <span class="cv-item-tag">C++</span>
-              <span class="cv-item-tag">Intel Pin</span>
-              <span class="cv-item-tag">Profiler</span>
-              <span class="cv-item-tag">Hotspot JVM</span>
-              <span class="cv-item-tag">Asm-x86</span>
-              <span class="cv-item-tag">Asm-x86-SIMD</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-        <CvSubSec className="gap-1">
-          <CvSubSecTitle className="font-fira" title="wyvern" />
-          <CvSubSecItems className="gap-2">
-            <div class="cv-item-row">
-              <a class="cv-item-link" href="https://github.com/resu-gh/wyvern" target="_blank" rel="noopener noreferrer">resu-gh/wyvern</a>
-              <span class="opacity-80">Thread-Safe and Re-Entrant LALR(1) Parser Generator</span>
-            </div>
-            <div class="cv-item-col">
-              <span class="cv-item-tag">C++</span>
-              <span class="cv-item-tag">Parser generator</span>
-              <span class="cv-item-tag">LALR(1)</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-        <CvSubSec className="gap-1">
-          <CvSubSecTitle className="font-fira" title="xdriver" />
-          <CvSubSecItems className="gap-2">
-            <div class="cv-item-row">
-              <a class="cv-item-link" href="https://github.com/v1dmon/xdriver" target="_blank" rel="noopener noreferrer">v1dmon/xdriver</a>
-              <span class="opacity-80">Concurrent Micro-Benchmark driver using dmon + wgen</span>
-            </div>
-            <div class="cv-item-col">
-              <span class="cv-item-tag">Rust</span>
-              <span class="cv-item-tag">Redis</span>
-              <span class="cv-item-tag">dmon</span>
-              <span class="cv-item-tag">wgen</span>
-              <span class="cv-item-tag">Micro-benchmarks</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-        <CvSubSec className="gap-1">
-          <CvSubSecTitle className="font-fira" title="xflow" />
-          <CvSubSecItems className="gap-2">
-            <div class="cv-item-row">
-              <a class="cv-item-link" href="https://github.com/v1dmon/xflow" target="_blank" rel="noopener noreferrer">v1dmon/xflow</a>
-              <span class="opacity-80">Workflow-driven Micro-Benchmark runner using dmon + wgen + xdriver</span>
-            </div>
-            <div class="cv-item-col">
-              <span class="cv-item-tag">Rust</span>
-              <span class="cv-item-tag">xdriver</span>
-              <span class="cv-item-tag">Micro-benchmarks</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
-        <CvSubSec className="gap-1">
-          <CvSubSecTitle className="font-fira" title="rcp" />
-          <CvSubSecItems className="gap-2">
-            <div class="cv-item-row">
-              <a class="cv-item-link" href="https://github.com/rootvr/rcp" target="_blank" rel="noopener noreferrer">rootvr/rcp</a>
-              <span class="opacity-80">Configuration Compiler for Integrating and Controlling non-ROS-2 Robots within ROS-2 Distributed Virtual Environments</span>
-            </div>
-            <div class="cv-item-col">
-              <span class="cv-item-tag">Python</span>
-              <span class="cv-item-tag">Redis</span>
-              <span class="cv-item-tag">ROS-2</span>
-              <span class="cv-item-tag">Docker</span>
-            </div>
-          </CvSubSecItems>
-        </CvSubSec>
+        <!-- projects -->
+        <CvSec className="gap-2">
+          <CvSecTitle className="gap-2" title={cv.Projects.k}>
+            <div class="i-ion-shapes-outline"></div>
+          </CvSecTitle>
+          {
+            cv.Projects.v.map(e => (
+              <CvSubSec className="gap-1">
+                <CvSubSecTitle className="font-dmmono" title={e.k} />
+                <CvSubSecItems className="gap-2">
+                  <div class="cv-item-row">
+                    <a class="cv-item-link" href={e.href} target="_blank" rel="noopener noreferrer">
+                      {e.repo}
+                    </a>
+                    <span class="opacity-80">{e.description}</span>
+                  </div>
+                  <div class="cv-item-col">
+                    {e.tags.map(t => (
+                      <span class="cv-item-tag">{t}</span>
+                    ))}
+                  </div>
+                </CvSubSecItems>
+              </CvSubSec>
+            ))
+          }
+        </CvSec>
       </CvSec>
     </CvSec>
   </Content>
-</Document>
 
-<style>
-  .cv-item-col {
-    @apply flex;
-    @apply flex-wrap;
-    @apply items-center;
-    @apply gap-2;
-  }
-  .cv-item-row {
-    @apply flex;
-    @apply flex-wrap;
-    @apply flex-col;
-  }
-  .cv-item-link {
-    @apply text-blue-500;
-    @apply hover:opacity-80;
-    @apply focus:opacity-50;
-    @apply font-fira;
-  }
-  .cv-item-tag {
-    @apply px-1;
-    @apply bg-orange-200;
-    @apply rounded-sm;
-    @apply font-fira;
-    @apply text-sm;
-  }
-  :global(.dark) .cv-item-tag {
-    @apply bg-zinc-700;
-  }
-</style>
+  <style>
+    .cv-item-col {
+      @apply flex;
+      @apply flex-wrap;
+      @apply items-center;
+      @apply gap-2;
+    }
+    .cv-item-row {
+      @apply flex;
+      @apply flex-wrap;
+      @apply flex-col;
+    }
+    .cv-item-link {
+      @apply text-blue-500;
+      @apply hover:opacity-80;
+      @apply focus:opacity-50;
+      @apply font-dmmono;
+    }
+    .cv-item-tag {
+      @apply px-1;
+      @apply bg-orange-200;
+      @apply rounded-sm;
+      @apply font-dmmono;
+      @apply text-sm;
+    }
+    :global(.dark) .cv-item-tag {
+      @apply bg-zinc-700;
+    }
+  </style>
+</Document>

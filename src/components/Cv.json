@@ -1,0 +1,193 @@
+{
+    "Info": {
+        "k": "Info"
+    },
+    "Contacts": {
+        "k": "Contacts",
+        "Email": {
+            "k": "Email",
+            "href": "mailto:9valentino4@gmail.com",
+            "aname": "9valentino4@gmail.com"
+        }
+    },
+    "Links": {
+        "k": "Links",
+        "Github": {
+            "k": "Github",
+            "href": "http://www.github.com/resu-gh",
+            "aname": "resu-gh",
+            "alink": "github.com/resu-gh"
+        },
+        "Gitlab": {
+            "k": "Gitlab",
+            "href": "http://www.gitlab.com/resu-gl",
+            "aname": "resu-gl",
+            "alink": "gitlab.com/resu-gl"
+        },
+        "Linkedin": {
+            "k": "Linkedin",
+            "href": "http://www.linkedin.com/in/valentino-di-giosaffatte-527a61243",
+            "aname": "valentino-di-giosaffatte-527a61243",
+            "alink": "linkedin.com/in/valentino-di-giosaffatte-527a61243"
+        },
+        "Website": {
+            "k": "Website",
+            "href": "https://resuland.github.io",
+            "aname": "resuland.github.io",
+            "alink": "resuland.github.io"
+        }
+    },
+    "Languages": {
+        "k": "Languages",
+        "English": {
+            "listening": { "k": "Listening", "level": "C1" },
+            "speaking": { "k": "Speaking", "level": "C1" },
+            "reading": { "k": "Reading", "level": "C1" },
+            "writing": { "k": "Writing", "level": "C1" }
+        }
+    },
+    "Education": {
+        "k": "Education",
+        "v" : [
+            {
+                "k": "LM-18 · Master's Degree in Computer Science",
+                "v": [
+                    "University of L'Aquila @ L'Aquila",
+                    "Department of Information Engineering, Computer Science and Mathematics",
+                    "Models for incremental public transportation service design",
+                    "Supervisor · Fabrizio Rossi · 110 / 110 cum laude"
+                ]
+            },
+            {
+                "k": "MU1 · Level-1 Master Course - Mobile and Web Technologies",
+                "v": [
+                    "University of L'Aquila @ L'Aquila",
+                    "Department of Information Engineering, Computer Science and Mathematics",
+                    "Models for incremental public transportation service design",
+                    "Supervisor · Henry Muccini · 70 / 70 cum laude"
+                ]
+            },
+            {
+                "k": "L-31 · Bachelor's Degree in Computer Science",
+                "v": [
+                    "University of L'Aquila @ L'Aquila",
+                    "Department of Information Engineering, Computer Science and Mathematics",
+                    "Models for incremental public transportation service design",
+                    "Supervisor · Gianpiero Monaco"
+                ]
+            },
+            {
+                "k": "Classical High School",
+                "v": [ "I.I.S. Vittorio Emanuele II @ Lanciano" ]
+            }
+        ]
+    },
+    "Work": {
+        "k": "Work",
+        "v": [
+            {
+                "k": "Ph.D Student",
+                "v": [
+                    "Sep 2023 - now",
+                    "Hybrid @ L'Aquila",
+                    "Supervisor · Henry Muccini",
+                    "Group · FrameLab Software Engineering Team",
+                    "Project · On the use of Machine learning for the discovery and rapid execution of QoS-aware microservices"
+                ]
+            },
+            {
+                "k": "Fellow Researcher",
+                "v": [
+                    "Jun 2023 - Sep 2023",
+                    "Hybrid @ L'Aquila",
+                    "Supervisor · Henry Muccini",
+                    "Group · FrameLab Software Engineering Team",
+                    "Project · Concurrent monitoring environments for distributed systems"
+                ]
+            },
+            {
+                "k": "Ph.D Candidate · winner",
+                "v": [
+                    "Jul 2022 - Dec 2022",
+                    "Remote @ Lugano",
+                    "Supervisor · Walter Binder",
+                    "Group · Dynamic Analysis Group",
+                    "Project · Dynamic x86 SIMD instructions profiler for the Hotspot VM using Intel Pin"
+                ]
+            }
+        ]
+    },
+    "Publications": {
+        "k": "Publications",
+        "v": [
+            {
+                "k": "Benchmark for Rapid QoS Analysis of Microservice-based Software Systems",
+                "v": [
+                    "Work in progress · Co-Author",
+                    "Prof. Henry Muccini · University of L'Aquila",
+                    "Prof. Mauro Caporuscio · Linnaeus University",
+                    "Prof. Karthik Vaidhyanathan · IIT-Hyderabad",
+                    "Dr. Riccardo Armando Di Prinzio · University of L'Aquila"
+                ]
+            }
+        ]
+    },
+    "Interests": {
+        "k": "Interests",
+        "v": [
+            "Programming Languages",
+            "Compilers",
+            "Operating Systems",
+            "Computer Graphics",
+            "Distributed Systems"
+        ]
+    },
+    "Programming": {
+        "k": "Programming",
+        "v": [
+            "C",
+            "C++",
+            "Rust",
+            "Go",
+            "Asm X86",
+            "Python",
+            "Lua",
+            "Asm ARM",
+            "Asm RISC-V",
+            "Zig"
+        ]
+    },
+    "Projects": {
+        "k": "Projects",
+        "v": [
+            {
+                "k": "dmon",
+                "href": "https://github.com/v1dmon/dmon",
+                "repo": "v1dmon/dmon",
+                "description": "Concurrent Monitoring System for Docker-powered Microservice Applications",
+                "tags": [ "Go", "Redis", "Docker", "Wireshark", "monitoring" ]
+            },
+            {
+                "k": "wgen",
+                "href": "https://github.com/v1dmon/wgen",
+                "repo": "v1dmon/wgen",
+                "description": "Workload generator for Microservice Applications",
+                "tags": [ "Go", "workload" ]
+            },
+            {
+                "k": "flow",
+                "href": "https://github.com/v1dmon/flow",
+                "repo": "v1dmon/flow",
+                "description": "Workflow-driven benchmark runner for dmon + wgen",
+                "tags": [ "Go", "Redis", "dmon", "wgen", "benchmark" ]
+            },
+            {
+                "k": "dxvc",
+                "href": "https://github.com/resu-gh/dxvc",
+                "repo": "v1dmon/dxvc",
+                "description": "Intel Pin profiler to count the number of SIMD instructions dynamically executed by a target program in a thread-sensitive manner",
+                "tags": [ "C++", "Intel Pin", "profiler", "Hotspot VM", "Asm-X86", "SIMD" ]
+            }
+        ]
+    }
+}

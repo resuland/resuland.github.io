@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/BlogPost.astro'
+layout: '../../layouts/Blog.astro'
 title: 'Partial Escape Analysis and Scalar Replacement for Java'
 description: 'Paper analysis'
 pubDate: 'Dec 23 2022'

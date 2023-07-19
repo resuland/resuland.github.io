@@ -1,5 +1,5 @@
 ---
-import Document from '../components/Document.astro'
+import Document from '../layouts/Document.astro'
 import Content from '../components/Content.astro'
 
 const posts = (await Astro.glob('./blog/*.{md,mdx}'))
@@ -41,7 +41,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}'))
     @apply px-1;
     @apply bg-orange-200;
     @apply rounded-sm;
-    @apply font-fira;
+    @apply font-dmmono;
     @apply text-sm;
     @apply hover:opacity-80;
     @apply focus:opacity-50;

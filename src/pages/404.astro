@@ -1,12 +1,13 @@
 ---
-import Document from '../components/Document.astro'
+import Document from '../layouts/Document.astro'
 import Content from '../components/Content.astro'
 ---
 
 <Document>
   <Content>
-    <section>
-      <h1 class="text-3xl text-center">Oops, not found</h1>
+    <section class="flex place-items-center place-content-center gap-2">
+      <div class="i-ion-sad-outline text-2xl"></div>
+      <h1 class="text-2xl text-center">Not found</h1>
     </section>
   </Content>
 </Document>

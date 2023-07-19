@@ -1,17 +1,6 @@
 ---
-import {
-  // IoAlbumsOutline,
-  IoLogoRss,
-  // IoPawOutline,
-  // IoPersonOutline,
-  // IoTabletPortrait,
-  // IoTabletPortraitOutline,
-  // IoTriangle,
-  // IoTriangleOutline
-} from 'react-icons/io5/index.js'
 import HeaderLink from './HeaderLink.astro'
 import ThemeToggle from './ThemeToggle'
-// import DropdownMenu from './DropdownMenu'
 
 import { SITE_TITLE } from '../config'
 ---
@@ -27,20 +16,17 @@ import { SITE_TITLE } from '../config'
         </a>
         <div class="navl-links">
           <HeaderLink href="/blog">
-            <IoLogoRss />
+            <div class="i-ion-social-rss-outline"></div>
             <span class="hidden md:flex">Blog</span>
           </HeaderLink>
-          <!-- <HeaderLink href="/cv">
-            <IoAlbumsOutline />
-            <span class="hidden md:flex">Cv</span>
-          </HeaderLink> -->
+          <!-- <HeaderLink href="/music"> -->
+          <!--   <div class="i-ion-headset-outline" /> -->
+          <!--   <span class="hidden md:flex">Music</span> -->
+          <!-- </HeaderLink> -->
         </div>
       </div>
       <div class="navr">
         <ThemeToggle client:visible />
-        <!-- <div class="flex md:hidden">
-          <DropdownMenu client:visible />
-        </div> -->
       </div>
     </nav>
   </div>

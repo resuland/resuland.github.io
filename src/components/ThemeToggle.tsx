@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { IoSunny, IoMoon } from 'react-icons/io5/index.js'
 
-const themes = ['light', 'dark']
+// const themes = ['light', 'dark']
 export default function ThemeToggle() {
   const [isMounted, setIsMounted] = useState(false)
   const [theme, setTheme] = useState(() => {
@@ -26,7 +25,7 @@ export default function ThemeToggle() {
   return isMounted ? (
     <div className="flex items-center">
       <button key={theme} className="hover:opacity-80 focus:opacity-50" onClick={toggleTheme}>
-        {theme === 'light' ? <IoMoon /> : <IoSunny />}
+        {theme === 'light' ? <div className="i-ion-moon-outline" /> : <div className="i-ion-sunny-outline" />}
       </button>
     </div>
   ) : (

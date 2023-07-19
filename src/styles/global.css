@@ -14,7 +14,7 @@ body {
   @apply leading-6;
   @apply transition-colors;
   @apply duration-500;
-  @apply font-opensans;
+  @apply font-dmsans;
 }
 
 * {
